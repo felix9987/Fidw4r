@@ -21,7 +21,6 @@
             android:hint="@string/email"
             android:textColorHint="@color/franco"
             android:textColor="@color/franco"
-            android:text="franco@gmail.com"
             android:fontFamily="@font/romans"
             android:textSize="30sp"
 
@@ -52,7 +51,6 @@
             android:textColorHint="@color/franco"
             android:textColor="@color/franco"
             android:inputType="textPassword"
-            android:text="12345678"
             android:fontFamily="@font/romans"
             android:textSize="30sp"
 
