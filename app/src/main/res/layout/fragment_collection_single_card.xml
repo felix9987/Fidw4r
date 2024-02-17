@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:id="@+id/collectionSingleCardFragmentView">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_menu"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/card_front_frame"
+
+
+        android:background="@android:color/transparent"
+
+        android:layout_width="@dimen/big_card_width_collection"
+        android:layout_height="@dimen/big_card_height_collection"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/previous_card_button"
+        app:layout_constraintRight_toLeftOf="@id/text_description"/>
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="@dimen/big_card_width_collection"
+        android:layout_height="@dimen/big_card_height_collection"
+
+        android:autoSizeMinTextSize="1dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/back_carta"
+        android:fontFamily="@font/romans"
+        android:gravity="center"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/card_front_frame"
+        app:layout_constraintRight_toLeftOf="@id/next_card_button"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.498" />
+
+    <ImageButton
+        android:id="@+id/previous_card_button"
+        android:background="@drawable/left"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+
+        android:onClick="previous"
+        />
+
+    <ImageButton
+        android:id="@+id/next_card_button"
+        android:background="@drawable/right"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="10dp"
+
+        android:onClick="next"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_menu"
+            />
+
+        <EditText
+            android:id="@+id/userLogin"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:hint="@string/email"
+            android:textColorHint="@color/franco"
+            android:textColor="@color/franco"
+            android:text="franco@gmail.com"
+            android:fontFamily="@font/romans"
+            android:textSize="30sp"
+
+            app:layout_constraintBottom_toTopOf="@id/passLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_block"
+
+            app:layout_constraintBottom_toTopOf="@id/passLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            ></ImageView>
+
+        <EditText
+            android:id="@+id/passLogin"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:hint="@string/password"
+            android:textColorHint="@color/franco"
+            android:textColor="@color/franco"
+            android:inputType="textPassword"
+            android:text="12345678"
+            android:fontFamily="@font/romans"
+            android:textSize="30sp"
+
+            app:layout_constraintBottom_toTopOf="@id/LoginText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userLogin"
+            />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_block"
+        app:layout_constraintBottom_toTopOf="@id/LoginText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userLogin"
+        ></ImageView>
+
+    <ImageButton
+        android:id="@+id/btnConfirmLogin"
+        android:background="@drawable/generic_button"
+
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passLogin"
+        />
+    <TextView
+        android:id="@+id/LoginText"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/accedi"
+        android:textColor="@color/franco"
+        android:fontFamily="@font/roman_sd"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passLogin"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

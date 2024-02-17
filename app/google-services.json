@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "49500163870",
+    "project_id": "dbgiococarte",
+    "storage_bucket": "dbgiococarte.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49500163870:android:715c2312ac56540fa7030f",
+        "android_client_info": {
+          "package_name": "it.uniba.dib.sms2223_28"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49500163870-if7hri5igbbkl5icvqn49rpn2du5i2mg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcXcSRRVfk5OfYi07dBG5hhkI5AiiB6Hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49500163870-if7hri5igbbkl5icvqn49rpn2du5i2mg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

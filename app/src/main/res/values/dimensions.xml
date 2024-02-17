@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hero_dimension">100dp</dimen>
+
+    <dimen name="card_height_hand">135dp</dimen>
+    <dimen name="card_width_hand">100dp</dimen>
+    <dimen name="cardDragged_height">225dp</dimen>
+    <dimen name="cardDragged_width">165dp</dimen>
+    <dimen name="card_height_collection">200dp</dimen>
+    <dimen name="card_width_collection">147dp</dimen>
+    <dimen name="big_card_height_collection">320dp</dimen>
+    <dimen name="big_card_width_collection">235dp</dimen>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".vista.CreditsFragment">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_menu"
+        />
+
+    <TextView
+        android:id="@+id/developer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:gravity="center"
+        android:textColor="@color/franco"
+
+        android:textSize="44sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roman_sd"
+        android:text="GABRIELE MOTTOLA"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/developer2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        />
+
+    <TextView
+        android:id="@+id/developer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:textColor="@color/franco"
+
+        android:textSize="44sp"
+
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roman_sd"
+        android:text="DANIELE SASSAROLA"
+
+        app:layout_constraintTop_toBottomOf="@id/developer1"
+        app:layout_constraintBottom_toTopOf="@id/developer3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/developer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:textColor="@color/franco"
+
+        android:textSize="44sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roman_sd"
+        android:text="MACINA FELICE"
+
+        app:layout_constraintTop_toBottomOf="@id/developer2"
+        app:layout_constraintBottom_toTopOf="@id/developer4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/developer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:gravity="center"
+        android:textColor="@color/franco"
+
+        android:textSize="44sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roman_sd"
+        android:text="GIANFILIPPO MITRANO"
+
+        app:layout_constraintTop_toBottomOf="@id/developer3"
+        app:layout_constraintBottom_toTopOf="@id/developer5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/developer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:textColor="@color/franco"
+
+        android:textSize="44sp"
+
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roman_sd"
+        android:text="SGOBBA MICHELE"
+
+        app:layout_constraintTop_toBottomOf="@id/developer4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

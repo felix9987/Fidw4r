@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollCard"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <FrameLayout
+            android:id="@+id/singleCardFrame"
+            android:layout_width="@dimen/big_card_width_collection"
+            android:layout_height="@dimen/big_card_height_collection"
+
+            android:visibility="invisible"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height_collection"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:id="@+id/card1"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/card2"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card2"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                app:layout_constraintStart_toEndOf="@id/card1"
+                app:layout_constraintEnd_toStartOf="@id/card3"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card3"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                app:layout_constraintStart_toEndOf="@id/card2"
+                app:layout_constraintEnd_toStartOf="@id/card4"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card4"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+                android:focusable="false"
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height_collection"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:id="@+id/card5"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+                android:focusable="false"
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/card6"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card6"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+                android:focusable="false"
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card5"
+                app:layout_constraintEnd_toStartOf="@id/card7"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card7"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+                android:focusable="false"
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card6"
+                app:layout_constraintEnd_toStartOf="@id/card8"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card8"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+                android:focusable="false"
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height_collection"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:id="@+id/card9"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/card10"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card10"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card9"
+                app:layout_constraintEnd_toStartOf="@id/card11"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card11"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card10"
+                app:layout_constraintEnd_toStartOf="@id/card12"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card12"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height_collection"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:id="@+id/card13"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/card14"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card14"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card13"
+                app:layout_constraintEnd_toStartOf="@id/card15"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card15"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card14"
+                app:layout_constraintEnd_toStartOf="@id/card16"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card16"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height_collection"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:id="@+id/card17"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/card18"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card18"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card17"
+                app:layout_constraintEnd_toStartOf="@id/card19"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card19"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card18"
+                app:layout_constraintEnd_toStartOf="@id/card20"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/card20"
+                android:transitionName="trans"
+                android:layout_width="@dimen/card_width_collection"
+                android:layout_height="@dimen/card_height_collection"
+
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+
+                app:layout_constraintStart_toEndOf="@id/card19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

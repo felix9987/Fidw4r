@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/GameplayActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/game_background">
+
+
+    <TextView
+        android:id="@+id/turnTextViewEndBattle"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="@string/turno_successivo"
+        android:textColor="@color/paolo"
+        android:fontFamily="@font/roman_sd"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/wall1"
+        app:layout_constraintEnd_toStartOf="@id/wall2"
+        ></TextView>
+
+
+
+        <ImageView
+            android:id="@+id/wall1"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/wall"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnEndBattle">
+        </ImageView>
+
+        <ImageButton
+            android:id="@+id/btnEndBattle"
+            android:background="@drawable/generic_button2"
+
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:onClick="endBattle"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/wall1"
+            app:layout_constraintEnd_toStartOf="@id/wall2"
+            />
+
+        <ImageView
+            android:id="@+id/wall2"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/wall"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnEndBattle"
+            app:layout_constraintEnd_toEndOf="parent">
+        </ImageView>
+
+
+
+    <FrameLayout
+        android:id="@+id/cardOpponent1"
+        android:layout_width="@dimen/card_width_hand"
+        android:layout_height="@dimen/card_height_hand"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toRightOf="@id/heroOpponentImageBattle"
+
+        app:layout_constraintRight_toLeftOf="@id/cardOpponent2"
+        app:layout_constraintBottom_toTopOf="@id/wall1"
+        app:layout_constraintTop_toTopOf="parent">
+
+   </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cardOpponent2"
+        android:layout_width="@dimen/card_width_hand"
+        android:layout_height="@dimen/card_height_hand"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toRightOf="@id/cardOpponent1"
+        app:layout_constraintRight_toLeftOf="@id/cardOpponent3"
+        app:layout_constraintBottom_toTopOf="@id/wall1"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cardOpponent3"
+        android:layout_width="@dimen/card_width_hand"
+        android:layout_height="@dimen/card_height_hand"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toRightOf="@id/cardOpponent2"
+        app:layout_constraintRight_toLeftOf="@id/cardOpponent4"
+        app:layout_constraintBottom_toTopOf="@id/wall1"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cardOpponent4"
+        android:layout_width="@dimen/card_width_hand"
+        android:layout_height="@dimen/card_height_hand"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toRightOf="@id/cardOpponent3"
+        app:layout_constraintRight_toLeftOf="@id/cardOpponent5"
+        app:layout_constraintBottom_toTopOf="@id/wall1"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cardOpponent5"
+        android:layout_width="@dimen/card_width_hand"
+        android:layout_height="@dimen/card_height_hand"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toRightOf="@id/cardOpponent4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/wall1"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+
+
+    <ImageView
+        android:id="@+id/heroOpponentImageBattle"
+        android:layout_width="@dimen/hero_dimension"
+        android:layout_height="@dimen/hero_dimension"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textOpponentHpBattle"
+        android:layout_width="@dimen/hero_dimension"
+        android:layout_height="@dimen/hero_dimension"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="20"
+        android:fontFamily="@font/roman_sd"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@id/heroOpponentImageBattle"
+        app:layout_constraintTop_toTopOf="@id/heroOpponentImageBattle" />
+
+    <TextView
+        android:id="@+id/textOpponentNameBattle"
+        android:layout_width="89dp"
+        android:layout_height="16dp"
+
+        android:elevation="3dp"
+
+        android:textColor="@color/franco"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roman_sd"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/heroOpponentImageBattle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/heroOpponentImageBattle"/>
+
+    <TextView
+        android:id="@+id/textPlayerNameBattle"
+        android:layout_width="89dp"
+        android:layout_height="16dp"
+
+        android:elevation="3dp"
+
+        android:textColor="@color/franco"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roman_sd"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/heroPlayerImageBattle"/>
+
+    <ImageView
+        android:id="@+id/heroPlayerImageBattle"
+        android:layout_width="@dimen/hero_dimension"
+        android:layout_height="@dimen/hero_dimension"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textPlayerHpBattle"
+        android:layout_width="@dimen/hero_dimension"
+        android:layout_height="@dimen/hero_dimension"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:fontFamily="@font/roman_sd"
+        android:text="20"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@id/heroPlayerImageBattle"
+        app:layout_constraintStart_toStartOf="@id/heroPlayerImageBattle" />
+
+
+ <FrameLayout
+     android:id="@+id/cardBattle1"
+     android:layout_width="@dimen/card_width_hand"
+     android:layout_height="@dimen/card_height_hand"
+
+     android:visibility="invisible"
+     android:background="@android:color/transparent"
+
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintHorizontal_bias="0.47"
+     app:layout_constraintLeft_toRightOf="@id/heroPlayerImageBattle"
+     app:layout_constraintRight_toLeftOf="@id/cardBattle2"
+     app:layout_constraintTop_toBottomOf="@id/wall1">
+
+ </FrameLayout>
+
+ <FrameLayout
+        android:id="@+id/cardBattle2"
+        android:layout_width="@dimen/card_width_hand"
+        android:layout_height="@dimen/card_height_hand"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardBattle1"
+        app:layout_constraintEnd_toStartOf="@id/cardBattle3"
+        app:layout_constraintTop_toBottomOf="@id/wall1">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cardBattle3"
+        android:layout_width="@dimen/card_width_hand"
+        android:layout_height="@dimen/card_height_hand"
+
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardBattle2"
+        app:layout_constraintEnd_toStartOf="@id/cardBattle4"
+        app:layout_constraintTop_toBottomOf="@id/wall1">
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/cardBattle4"
+        android:layout_width="@dimen/card_width_hand"
+        android:layout_height="@dimen/card_height_hand"
+
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardBattle3"
+        app:layout_constraintEnd_toStartOf="@id/cardBattle5"
+        app:layout_constraintTop_toBottomOf="@id/wall1">
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/cardBattle5"
+        android:layout_width="@dimen/card_width_hand"
+        android:layout_height="@dimen/card_height_hand"
+
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardBattle4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wall1">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/opponentDamage"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roman_sd"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@id/heroOpponentImageBattle"
+        app:layout_constraintTop_toTopOf="@id/heroOpponentImageBattle" />
+
+    <TextView
+        android:id="@+id/playerDamage"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roman_sd"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@id/heroPlayerImageBattle"
+        app:layout_constraintTop_toTopOf="@id/heroPlayerImageBattle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

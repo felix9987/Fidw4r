@@ -1,0 +1,320 @@
+<resources>
+    <string name="app_name">Fidw4r</string>
+    <string name="password">Password</string>
+    <string name="conferma">Conferma</string>
+    <string name="username">Username</string>
+    <string name="registrati">Registrati</string>
+    <string name="ospite">Ospite</string>
+    <string name="email">Email</string>
+    <string name="conferma_password">Conferma Password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accedi">Accedi</string>
+    <string name="benvenuto">BENVENUTO</string>
+    <string name="loggato">QUESTO UTENTE E\' GIA\' LOGGATO</string>
+    <string name="non_ottenuto">Utente non ottenuto</string>
+    <string name="credenziali_non_valide">Credenziali non valide</string>
+    <string name="utente_errato">Utente non valido</string>
+    <string name="probelma_di_rete">impossibile connettersi alla rete"</string>
+    <string name="troppe_richeste">troppe richieste, attendere prima di effettuare di nuovo il login"</string>
+    <string name="errore_login">errore, impossibile effettuare il login</string>
+    <string name="login_in_corso">Login in corso</string>
+    <string name="formato_corretto">Inserisci un formato corretto</string>
+    <string name="caratteri_psw">Inserisci una password con almeno 8 caratteri</string>
+    <string name="password_diverse">Le password non corrispondono</string>
+    <string name="inserisci_username">Inserisci un username</string>
+    <string name="registrazione_avvenuta">Registrazione Avvenuta</string>
+    <string name="mail_esistente">Email già esistente</string>
+    <string name="password_debole">Password non abbastanza sicura</string>
+    <string name="accesso_negato">Impossibile effettuare l\'accesso</string>
+
+
+    //GameplayActivity
+    <string name="avversario_ritirato">l\'avversario si è ritirato</string>
+    <string name="attesa_avversario">IN ATTESA DELL\'AVVERSARIO</string>
+    <string name="avversario_disconnesso">L\'AVVERSARIO SI E\' DISCONNESSO</string>
+    <string name="attesa_riconnessione">IN ATTESA DI RICONNESSIONE...</string>
+    <string name="connesione_persa_avversario">l\'avversario ha perso la connesione</string>
+    <string name="connesione_persa_giocatore">hai perso la connesione</string>
+    <string name="wifi_interrotto">LA CONNESSIONE WIFI E\' STATA INTERROTTA.</string>
+    <string name="ti_rimangono">TI RIMANGONO</string>
+    <string name="secondi">SECONDI</string>
+    <string name="partita_persa">PER RICONNETTERTI, ALTRIMENTI PERDI LA PARTITA!</string>
+
+
+    //MenuGameActivity
+    <string name="ospite_negato">IMPOSSIBILE GIOCARE COME OSPITE</string>
+    <string name="usare_account">DEVI USARE UN ACCOUNT PER GIOCARE</string>
+
+    //PlayActivity
+    <string name="connessione_lunga">IMPOSSIBILE STABILIRE LA CONNESSIONE IN TEMPO</string>
+    <string name="internet_necessario">INTERNET E\' DISABILITATO COLLEGATI A UNA RETE PER GIOCARE</string>
+    <string name="problema_connessione">PROBLEMA DI CONNESSIONE, RIPROVA.</string>
+    <string name="rete_inaccessibile">IMPOSSIBILE ACCEDERE ALLA RETE.</string>
+    <string name="errore_ricerca">ERRORE DURANTE LA RICERCA,</string>
+    <string name="riprova">RIPROVA</string>
+
+
+    //BattleFragment
+    <string name="cinque_carte">NON PUOI GIOCARE PIU\' DI 5 CARTE INSIEME</string>
+
+
+    //GameplayFragment
+    <string name="troppe_carte">TROPPE CARTE IN MANO, UNA CARTA E\' STATA BRUCIATA</string>
+
+    //ResultFragment
+    <string name="hai_perso">HAI PERSO</string>
+    <string name="pareggio">PAREGGIO</string>
+
+
+
+
+
+    //ROMANI
+    <string name="rome">Roma</string>
+
+    <string name="legionari">Legionari</string>
+    <string name="legionari_effect">Evoca una copia di sé stesso.</string>
+    <string name="legionari_description">Il legionario romano era il fante che faceva parte della legione romana. I Romani dovettero affrontare svariate popolazioni che adottavano metodi di combattimento differenti tra loro; questo influì sia sull\'organizzazione e sulla struttura della legione, sia sul tipo di armamento utilizzato. Il legionario è sempre stato fonte di ispirazione e modello dal punto di vista militare per le proprie capacità, la propria esperienza ed efficienza.</string>
+
+    <string name="centurioni">Centurioni</string>
+    <string name="centurioni_effect">Infligge 2 danni all\'eroe avversario.</string>
+    <string name="centurioni_description">Il centurione era uno dei gradi della catena di comando nell\'Esercito Romano, a capo di una centuria, paragonabile ai moderni ufficiali di grado intermedio. I centurioni romani erano sempre posizionati in prima linea, per dare dimostrazione del proprio coraggio ed impeto ai propri soldati, ai fini del buon esito della battaglia, almeno dai tempi delle guerre puniche.</string>
+
+    <string name="gladiatiori">Gladiatori</string>
+    <string name="gladiatori_effect">Evoca 2 copie di se stesso.</string>
+    <string name="gladiatori_description">Il gladiatore, era un particolare lottatore dell\'antica Roma. Il nome deriva da gladio, la spada utilizzata dai legionari romani utilizzata anche dai lottatori. I gladiatori combattevano in specifici spettacoli chiamati munera per la realizzazione dei quali si sviluppò la struttura architettonica dell\'anfiteatro. L\'origine della figura del gladiatore è ricollegata all\'istituzione del cosiddetto munus, il dovere/obbligo dovuto dalle famiglie benestanti ai propri defunti, durante le quali uomini armati, alla presenza di un arbitro, si battevano per onorare il defunto.</string>
+
+    <string name="bighe">Bighe da corsa</string>
+    <string name="bighe_effect">Aggiunge +1 forza alle tue altre truppe evocate in questo turno.</string>
+    <string name="bighe_description">La biga era il cocchio da guerra, o da pompa magna o da giostre, utilizzato in epoca classica. Le bighe generalmente erano biposto ed erano collegate a 2 o più cavalli, erano scoperte di tettoia ed avevano generalmente la parte anteriore di forma semicircolare. La parte posteriore aperta consentiva all\'auriga di salirvi.</string>
+
+    <string name="terme">Termae romane</string>
+    <string name="terme_effect">Guadagni 2 punti vita per ogni truppa evocata nel turno precedente.</string>
+    <string name="terme_description">Le terme romane erano edifici pubblici dotati di impianti che oggi si chiamerebbero igienico-sanitari. Rappresentavano uno dei principali luoghi di ritrovo durante l\'antica Roma, a partire dal II secolo a.C. Alle terme poteva avere accesso quasi chiunque, anche i più poveri, in quanto in molti stabilimenti l\'entrata era gratuita o quasi. Le numerose terme erano un luogo di socializzazione, di rilassamento e di sviluppo di attività vive per uomini e donne, in spazi e orari separati.</string>
+
+    <string name="testuggine">Formazione a testuggine</string>
+    <string name="testuggine_effect">Infliggi 2 danno per ogni truppa evocata il turno precedente.</string>
+    <string name="testuggine_description">La testuggine romana era una formazione di fanteria caratteristica dell\'esercito romano. Schieramento di grande complessità, richiedeva notevole coordinamento collettivo. Era ideato appositamente per un drappello di legionari, armati con il gladio e, in particolare, con l\'ampio e robusto scudo quadrangolare in dotazione alle legioni. Dava il grande vantaggio di poter avanzare fino al contatto con le prime file nemiche riparandosi da frecce e proiettili e occultando il reale numero dei componenti, in modo da generare un effetto sorpresa. Grazie alla protezione che offriva, questa formazione era particolarmente usata durante gli assedi.</string>
+
+    <string name="necropoli">Necropoli</string>
+    <string name="necropoli_effect">Pesca una carta per ogni tua truppa distrutta il turno precedente.</string>
+    <string name="necropoli_description">In età romana una fondamentale disposizione giuridica, che doveva essere rispettata da tutta la comunità, imponeva il seppellimento dei morti al di fuori del perimetro della città. Ciò era determinato sia da evidenti ragioni igieniche sia per motivi di superstizione che volevano rigidamente separati il mondo dei vivi da quello dei morti, regola che veniva applicata anche da coloro che risiedevano in villaggi o in abitazioni isolate. Le necropoli si disponevano quindi nei suburbia delle città, lungo le più importanti direttrici viarie oppure nelle campagne in adiacenza ai campi, sia sui principali assi centuriali che sulle strade interne.</string>
+
+    <string name="colosseo">Colosseo</string>
+    <string name="colosseo_effect">Evoca 2 gladiatori senza effetto. Si attiva anche il prossimo turno.</string>
+    <string name="colosseo_description">Il Colosseo, originariamente conosciuto come Anfiteatro Flavio o semplicemente Amphitheatrum, situato nel centro della città di Roma, è il più grande anfiteatro romano del mondo (in grado di contenere un numero di spettatori stimato tra 50 000 e 87 000).Il Colosseo ospitava i giochi dell\'anfiteatro, che comprendevano: lotte tra animali (venationes), l\'uccisione di condannati da parte di animali feroci o altri tipi di esecuzioni (noxii) e i combattimenti tra gladiatori (munera). Le attività seguivano un programma codificato: la mattina c\'erano i combattimenti fra gli animali o fra un gladiatore e un animale, all\'ora di pranzo si eseguivano le condanne a morte e solo nel pomeriggio si svolgevano i combattimenti fra gladiatori.</string>
+
+    <string name="spartaco">Spartaco</string>
+    <string name="spartaco_effect">Quando viene evocato aggiunge +1 alla forza delle tue altre truppe.</string>
+    <string name="spartaco_description">Spartaco è stato un gladiatore e condottiero trace che capeggiò la rivolta di schiavi nota come terza guerra servile, la più impegnativa di questo tipo che Roma dovette affrontare.</string>
+
+    <string name="bruto">Bruto</string>
+    <string name="bruto_effect">Quando viene evocato, sottrae 2 punti vita (se possibile) e raddoppia la sua forza.</string>
+    <string name="bruto_description">Marco Giunio Bruto, ufficialmente noto dopo l\'adozione come Quinto Servilio Cepione Bruto (Quintus Servilius Caepio Brutus), è stato un politico, oratore, filosofo e studioso romano, senatore della tarda Repubblica romana e uno degli assassini di Giulio Cesare; fu difatti una delle figure preminenti della congiura delle Idi di marzo assieme a Gaio Cassio Longino e a Decimo Bruto.</string>
+
+    <string name="romoloremo">Romolo e Remo</string>
+    <string name="romoloremo_effect">Infligge 5 danni all’eroe avversario.</string>
+    <string name="romoloremo_description">Romolo e Remo sono, nella tradizione mitologica romana, due fratelli gemelli, uno dei quali, Romolo, fu il fondatore eponimo della città di Roma e suo primo re. La data di fondazione è indicata per tradizione al 21 aprile 753 a.C. Secondo la leggenda, erano figli di Rea Silvia, discendente di Enea, e di Marte.</string>
+
+    //PERSIANI
+    <string name="persia">Persia</string>
+
+    <string name="sparabara">Sparabara</string>
+    <string name="sparabara_effect">Rigenera 1 punto vita.</string>
+    <string name="sparabara_description">Gli sparabara erano fanti di prima linea impiegati nelle battaglie condotte dall\'Impero persiano, provenivano da ogni ceto della società persiana e venivano educati sin da bambini all\'arte militare, e quando non impiegati in campagne lontano dal loro paese si dedicavano all\'agricoltura e alla caccia nelle vaste pianure della Persia.</string>
+
+    <string name="arcieri_persiani">Arcieri persiani</string>
+    <string name="arcieri_persiani_effect">Rigenera 2 punti vita.</string>
+    <string name="arcieri_persiani_description">Erano in pochi i Persiani soldati di professione e, a parte i primi Immortali achemenidi e alcuni opliti mercenari, nessuno era addestrato. La fanteria di leva includeva soldati armati di frombolo, archi o giavellotti, tutti con armature leggere, ma alcuni portavano lo scudo.</string>
+
+    <string name="immortali">Gli Immortali</string>
+    <string name="immortali_effect">La metà dei danni che subisci in questo turno vengono inflitti all\'avversario.</string>
+    <string name="immortali_description">Gli Immortali erano l\'unità d\'élite della guardia imperiale del Grande Re persiano. Erano truppe scelte reclutate tra i nobili persiani e fidati compagni agli ordini diretti del divino Gran Re. Condividevano tutto: le sofferenze e le privazioni, l\’onore e la gloria, le marce forzate e il posto letto in tenda. 10 000, sempre.</string>
+
+    <string name="satrapi">Satrapi</string>
+    <string name="satrapi_effect">Pesca una carta e rigenera 2 punti vita.</string>
+    <string name="satrapi_description">Satrapo era il nome dato ai governatori delle province, denominate appunto "satrapie", degli antichi imperi persiani, ovvero l\'impero achemenide, l\'impero partico e l\'impero sasanide, e di alcuni regni ellenistici.</string>
+
+    <string name="elefanti">Elefanti da guerra</string>
+    <string name="elefanti_effect">Rigenera 4 punti vita e 1 punto vita addizionale per ogni truppa avversaria presente in campo.</string>
+    <string name="elefanti_description">Gli elefanti da guerra erano armi importanti, anche se non largamente usate, nell\'antica storia militare. Venivano principalmente utilizzati nelle cariche per scompaginare i ranghi dei nemici. Gli elefanti da guerra erano esclusivamente animali maschi, scelti perché più veloci, più pesanti e più aggressivi delle femmine.</string>
+
+    <string name="shamshir">Shamshir</string>
+    <string name="shamshir_effect">Rigenera  1 punto vita per ogni truppa avversaria presente in campo.</string>
+    <string name="shamshir_description">La Shamshir, anche Shamsheer o Chimchir, è la scimitarra persiana, sviluppata nell\'XI secolo dai turchi selgiuchidi partendo dal modello del kilij, la scimitarra turca "classica". La parola significa, in lingua persiana, sia "spada" che "curvo come l\'artiglio del leone".</string>
+
+    <string name="arco_persiano">Arco partico-persiano</string>
+    <string name="arco_persiano_effect">I danni subiti vengono inflitti anche all\'avversario.</string>
+    <string name="arco_persiano_description">L\'Arco partico-persiano è un arco composito ricurvo e simmetrico, realizzato in corno di ibex, legno e tendine di gazzella o daino. Questo tipo di arma veniva sottoposto a pressioni notevoli. Gli esperti sostengono che, privo di corda, l\'arco partico-persiano si sarebbe ripiegato su sé stesso fino a far incrociare le “braccia”.</string>
+
+    <string name="alessandro_magno">Alessandro I Magno</string>
+    <string name="alessandro_magno_effect">Guadagni un punto vita per ogni truppa da te evocata.</string>
+    <string name="alessandro_magno_description">Alessandro III di Macedonia, universalmente conosciuto come Alessandro Magno è stato un condottiero e militare macedone antico, re di Macedonia della dinastia degli Argeadi a partire dal 336 a.C. Il termine "magno" deriva dal latino magnus "grande", che traduce il termine greco antico mégas. Noto anche come Alessandro il Grande, Alessandro il Conquistatore o Alessandro il Macedone, è considerato uno dei più celebri conquistatori e strateghi della storia.</string>
+
+    <string name="seleuco">Seleuco I Nicatore</string>
+    <string name="seleuco_effect">Infligge danni all\'avversario pari all\'attacco della sua truppa più potente.</string>
+    <string name="seleuco_description">Seleuco Nicatore, chiamato nella storiografia moderna Seleuco I, è stato un sovrano macedone antico. Fu prima diadoco di Alessandro Magno e poi primo sovrano dell\'impero seleucide, che da lui prese il nome. Alla morte di Alessandro, la sua carica corrispondeva a quella di un attuale ministro, in occasione della seconda divisione dell\'impero che avvenne nel 321 a.C. ricevette la satrapia di Babilonia.</string>
+
+    <string name="ciro">Ciro II di Persia</string>
+    <string name="ciro_effect">Sottrai casualmente una truppa dell\'avversario e la evochi sul tuo campo.</string>
+    <string name="ciro_description">Ciro II di Persia, noto come Ciro il Grande, è stato imperatore persiano e discendente di Ciro I di Persia, membro di quella stirpe dei Teispidi che da qualche tempo controllava la Perside. Noto come il fondatore dell\'impero persiano, Ciro succedette a suo padre Cambise I, liberò i Persiani dal dominio dei Medi e fu l\'erede naturale delle grandi monarchie mediorientali. </string>
+
+    //SPARTANI
+    <string name="sparta">Sparta</string>
+
+    <string name="iloti">Iloti</string>
+    <string name="iloti_effect">infligge 1 danno a entrambi gli eroi.</string>
+    <string name="iloti_description">Gli Iloti erano, nel sistema sociale di Sparta, una parte della popolazione del territorio dominato dalla polis greca vivente in stato di schiavitù. Discendenti di coloro che abitavano la Laconia prima dell\'invasione da parte dei Dori, verificatasi attorno al X secolo a.C., a cui poi si aggiunsero, nell\'VIII e VII secolo, gli abitanti della Messenia, dopo la conquista della loro regione ad opera di Sparta.</string>
+
+    <string name="spartiati">Spartiati</string>
+    <string name="spartiati_effect">infligge 3 danni all’eroe avversario</string>
+    <string name="spartiati_description">Gli Spartiati erano i diretti discendenti dei dori e cittadini di diritto, i quali governavano la città prendendo parte all\'apèlla. In battaglia avevano la fama di essere i migliori soldati dell\'antica Grecia: la forza dei suoi opliti permise a Sparta di ottenere l\'egemonia in Grecia per gran parte del periodo classico.</string>
+
+    <string name="trecento">I 300 di Re Leonida</string>
+    <string name="trecento_effect">non subisci danni questo turno.</string>
+    <string name="trecento_description">I persiani, dopo la smacco subito qualche anno prima vicino ad Atene, decisero di intraprendere una nuova invasione e di attuarla durante lo svolgimento dei giochi olimpici che prevedevano la tregua. I greci decisero di partire per andare a difendere la madre patria, a guidare la spedizione greca fu il re di Sparta, Leonida. Erodoto narra che prese 300 uomini e si diresse alle Temopili.</string>
+
+    <string name="menelao">Menelao</string>
+    <string name="menelao_effect">infliggi un danno ogni volta che viene evocata una truppa.</string>
+    <string name="menelao_description">Menelao è un personaggio della mitologia greca, figlio di Atreo e di Erope e fratello minore di Agamennone. È il re di Sparta e marito di Elena, che Paride portò a Troia, causando la spedizione greca contro la città. Nei testi omerici l\'epiteto che lo accompagna è biondo, il che ne fa un personaggio di grande bellezza: Menelao costituisce un tipico esempio di kalokagathia, essendo anche molto valoroso in guerra.</string>
+
+    <string name="falange">Falange Spartana</string>
+    <string name="falange_effect">se hai meno di 12 hp infligge 4 danni all’eroe avversario</string>
+    <string name="falange_description">La falange è un\'antica formazione di combattimento composta da fanteria pesante i cui soldati sono armati di lance o picche, scudi e spada. Tipica del mondo greco ed ellenistico, venne adottata anche da altri popoli che ne modificarono le caratteristiche e le funzioni fino all\'epoca rinascimentale, dove con l\'avvento delle armi da fuoco perse di importanza.</string>
+
+    <string name="taigeto">Monte Taigeto</string>
+    <string name="taigeto_effect">pesca 2 carte e infliggi 2 danni diretti</string>
+    <string name="taigeto_description">“I bambini nati da entrambi genitori spartiati vengono esaminati dagli anziani e, se non giudicati idonei fisicamente, abbandonati a morire sul monte Taigeto”. Questa è la dura legge di Sparta, la legge che innalza gli uomini a guerrieri.</string>
+
+    <string name="oplon">Oplon</string>
+    <string name="oplon_effect">Infligge 5 danni all\'eroe nemico.</string>
+    <string name="oplon_description">L\'Oplon era lo scudo distintivo dell\'oplita, il soldato di fanteria pesante della Grecia antica. Noto anche come "scudo cavo", o "scudo argivo", costituisce una delle varianti più importanti dell\'aspis, lo scudo greco tradizionale.</string>
+
+    <string name="cavalleria">cavalleria</string>
+    <string name="cavalleria_effect">infliggi 3 danni a entrambi gli eroi</string>
+    <string name="cavalleria_description">Nel 424 a.C. venne creato un corpo di cavalleria composto da 400 uomini, anche se era un reparto povero dell\'esercito spartano, i cavalli appartenevano ai più ricchi e gli uomini davano le selle quando venivano mobilitati per la battaglia. Il ruolo dei cavalieri era per lo più di assistenza, un ruolo dedicato all\'esplorazione e alla protezione delle truppe, molestie a distanza o alla persecuzione del nemico durante la fuga.</string>
+
+    <string name="termopili">termopili</string>
+    <string name="termopili_effect">evoca 4 truppe con due attacco</string>
+    <string name="termopili_description">La battaglia delle Termòpili, fu una battaglia combattuta da un\'alleanza di poleis greche, guidata dal re di Sparta Leonida I, contro l\'Impero persiano governato da Serse I. Si svolse in tre giorni, durante la seconda invasione persiana della Grecia, nell\'agosto o nel settembre del 480 a.C. presso lo stretto passaggio delle Termopili, contemporaneamente alla battaglia navale di Capo Artemisio.</string>
+
+    <string name="gorgo">gorgo</string>
+    <string name="gorgo_effect">se hai meno hp dell’avversario raddoppia l’attacco</string>
+    <string name="gorgo_description">Gorgo fu una regina spartana, moglie di Leonida I, il re che combatté e morì nella battaglia delle Termopili. Figlia, moglie e madre di tre differenti re di Sparta: Cleomene I, Leonida I e Plistarco rispettivamente, Gorgo è una delle pochissime figure storiche femminili ad essere nominate da Erodoto per il suo acume politico e la sua saggezza.</string>
+
+    <string name="ippocatre">ippocrate</string>
+    <string name="ippocatre_effect">se hai 12 o meno hp infligge 5 danni all’avversario</string>
+    <string name="ippocrate_description">Ippocrate è stato un ammiraglio spartano, è menzionato per la prima volta quando fu inviato in Eubea con Epicle per portar via di lì la flotta di Agesandrida, che lì non era più al sicuro dopo che Mindaro era stato sconfitto a Cinossema (411 a.C.). Ritornò poi con Agesandrida nell\'Ellesponto, dove fu nominato vice di Mindaro per le operazioni successive. Dopo la disastrosa sconfitta di Cizico Ippocrate, che divenne comandante a causa della morte di Mindaro, mandò a Sparta questo famoso messaggio, intercettato dagli Ateniesi: "Le navi sono perse. Mindaro è morto. Gli uomini hanno fame. Non sappiamo cosa fare."</string>
+
+    //EGIZI
+    <string name="egypt">Egitto</string>
+
+    <string name="schiavi">schiavi</string>
+    <string name="schiavi_effect">non fa nulla, è uno schiavo che t’aspettavi?!</string>
+    <string name="schiavi_description">Durante l\'Antico Regno (2686-2173 a.C.), l\'unica forma di "schiavitù" conosciuta, a parte i prigionieri di guerra, era la corvée o lavoro forzato nelle campagne. I ricchi pagavano per esentarsi da tale obbligo, mentre i più poveri dovevano piegarvisi e se tentavano la fuga, venivano puniti con la schiavitù a vita.</string>
+
+    <string name="hyksos">hyksos</string>
+    <string name="hyksos_effect">fa un danno per ogni altra copia di questa carta che hai evocato nella partita</string>
+    <string name="hyksos_description">Il termine Hyksos, forma grecizzata dell\'egizio heka khasut, viene generalmente usato per definire le popolazioni che penetrarono in Egitto sul finire del periodo della storia egizia indicato come Medio Regno e governarono il nord dell\'Egitto e parte del sud nel Secondo periodo intermedio, fra il 1720 e il 1530 a.C. In particolare sono chiamati hyksos i sei faraoni della XV dinastia (circa 1650-1550 a.C.). Centro politico del potere degli hyksos fu la città di Avaris, da loro fondata nel delta del Nilo.</string>
+
+    <string name="piramide">piramide</string>
+    <string name="piramide_effect">la prossima carta che giochi in questo turno viene giocata due volte</string>
+    <string name="piramide_description">Le piramidi egizie sono costruzioni architettoniche di forma piramidale con base perlopiù quadrata o, talvolta, rettangolare. La maggior parte degli studiosi ritiene, benché non esista alcuna prova o cartiglio o iscrizione in nessuna piramide di quelle note e nonostante non siano state trovate tracce comprovanti tale utilizzo (corpi o corredi funebri, disegni o decorazioni o riferimenti di alcun tipo), che si trattasse di costruzioni facenti parte di un più ampio complesso funerario per sovrani dell\'antico Egitto.</string>
+
+    <string name="visir">visir</string>
+    <string name="visir_effect">pesca una carta\n</string>
+    <string name="visir_description">Il termine visir, indicava un alto funzionario presso la corte musulmana/ottomana di un sultano, di un emiro o di un califfo. Anacronisticamente, perciò, tale termine viene usato e universalmente accettato, in campo archeo-storico, per tradurre l\'egiziano antico ṯaty che era, di fatto, il più alto funzionario dell\'amministrazione della corte faraonica, secondo solo al re.</string>
+
+    <string name="nave">nave</string>
+    <string name="nave_effect">infliggi un danno per ogni truppa evocata da te in questa partita</string>
+    <string name="nave_description">Le navi egizie mostrano l\’alto grado di perfezione raggiunto dai costruttori navali nell\'antico Egitto. Le linee esterne della nave hanno le curve aggraziate di imbarcazioni da corsa. La vela alta e stretta è stata sostituita con una molto più grande, larga quanto l\’altra era alta, con un boma che può ora essere orientato a seconda del vento, ben sopraelevato rispetto alla coperta.</string>
+
+    <string name="sacerdoti">sacerdoti</string>
+    <string name="sacerdoti_effect">cura di 4 il tuo eroe</string>
+    <string name="sacerdoti_description">kher-heb o khery-heb è il nome con cui, nell\'antico Egitto veniva designata una classe di sacerdoti. Venne usato per indicare i sacerdoti-lettori che avevano il compito di declamare le formule sacre durante il culto. In seguito il termine venne associato ai sacerdoti addetti ai riti funebri nelle necropoli, con il compito di pronunciare le formule magiche rituali per consentire la vita al defunto nei Campi Iaru. Veniva raffigurato vestito con una fascia bianca incrociata sul torace.</string>
+
+    <string name="micerino">micerino</string>
+    <string name="micerino_effect">cura di 5 il tuo eroe. Pesca una carta</string>
+    <string name="micerino_description">Menkaura è stato un sovrano egizio della IV dinastia, meglio conosciuto con il nome ellenizzato di Micerino. Talvolta il nome può comparire anche come Micherino. Le evidenze archeologiche permettono di stabilire che fu l\'immediato successore di Chefren, suo padre. Micerino è famoso per la sua tomba, la Piramide di Micerino, a Giza, e per la triadi statuarie che lo raffigurano affiancato da divinità o dalle consorti Khamerernebti II e Rakhetra.</string>
+
+    <string name="chefren">chefren</string>
+    <string name="chefren_effect">infliggi 4 danni all\'eroe nemico e cura di 4 il tuo eroe</string>
+    <string name="chefren_description">Chefren (... – 2532 a.C.) è stato un faraone della IV dinastia egizia. È probabile che Chefren fosse figlio di Cheope e fratellastro quindi di Kheper. Una possibile ricostruzione dei fatti legati alla successione di Cheope è la seguente: essendo già morto Kuaf, primogenito e successore predestinato, secondo una versione dei fatti ucciso da Kheper, la lotta per la successione si svolse appunto tra Kheper e Chefren (un altro figlio di Medjedu, Hardedef, ricordato ancora nel Nuovo Regno come sapiente, non entrò in lizza).</string>
+
+    <string name="cheope">cheope</string>
+    <string name="cheope_effect">infliggi 1 danno all\'eroe nemico, cura di 1 il tuo eroe per ogni turno dal prossimo</string>
+    <string name="cheope_description">Cheope, ellenizzazione dell\'originale Khufu (... – 2566 a.C.), è stato un sovrano egizio della IV dinastia. Regnò succedendo al possibile padre, Snefru. È comunemente ritenuto il committente della Grande Piramide di Giza, una delle Sette meraviglie del mondo, ma molti altri aspetti del suo regno sono scarsamente documentati.</string>
+
+    <string name="ricerca_in_corso">ricerca in corso...</string>
+    <string name="search_match">cerca partita</string>
+    <string name="collection_text_herochoice">Esplora le carte</string>
+    <string name="chooseYourHero">Scegli il tuo mazzo!</string>
+    <string name="gioca">gioca</string>
+    <string name="obbiettivi">obbiettivi</string>
+    <string name="collezione">collezione</string>
+    <string name="volume">Volume</string>
+    <string name="lingua">lingua</string>
+    <string name="esci">esci</string>
+    <string name="crediti">crediti</string>
+    <string name="pass">termina turno 1</string>
+    <string name="tutorial">Segui il tutorial</string>
+    <string name="backs">Dorsi</string>
+    <string name="leaderboard">Classifica</string>
+    <string name="back_choice">Scegli che dorso utilizzare!</string>
+
+    <string name="n_deck_description">Numero di carte nel mazzo</string>
+    <string name="n_stroba_description">Stroba utilizzabile durante il turno</string>
+    <string name="n_hand_description">Numero di carte nella mano del tuo avversario</string>
+
+
+    //Achievements
+    <string name="achievement_title_1">Veni, Vidi, Vici</string>
+    <string name="achievement_description_1">Vinci 4 partite utilizzando i romani</string>
+    <string name="unlock_deck1">Sblocca i persiani</string>
+
+    <string name="achievement_title_2">Principe di Persia</string>
+    <string name="achievement_description_2">Vinci 4 partite utilizzando i persiani</string>
+    <string name="unlock_deck2">Sblcca gli spartani</string>
+
+    <string name="achievement_title_3">Questa è Sparta</string>
+    <string name="achievement_description_3">Vinci 4 partite utilizzando gli spartani</string>
+    <string name="unlock_deck3">Sblocca gli egiziani</string>
+
+    <string name="achievement_title_4">La Mummia</string>
+    <string name="achievement_description_4">Vinci 4 partite utilizzando gli egizi</string>
+    <string name="unlock_deck4">Hai sbloccato tutti i mazzi</string>
+
+    <string name="achievement_title_5">Il dado è tratto</string>
+    <string name="achievement_description_5">Raggiungi 700 trofei</string>
+    <string name="unlock_back1">Sblocca il dorso romano</string>
+
+    <string name="achievement_title_6">Panta Rei</string>
+    <string name="achievement_description_6">Raggiungi 800 trofei</string>
+    <string name="unlock_back2">Sblocca il dorso persiano</string>
+
+    <string name="achievement_title_7">Stasera ceneremo nell\'Ade</string>
+    <string name="achievement_description_7">Raggiungi 900 trofei</string>
+    <string name="unlock_back3">Sblocca il dorso spartano</string>
+
+    <string name="achievement_title_8">Ode all\'Imperatore</string>
+    <string name="achievement_description_8">Raggiungi 1000 trofei</string>
+    <string name="unlock_back4">Sblocca il dorso egiziano</string>
+
+    <string name="turn">TERMINA TURNO</string>
+
+    <string name="tutorial_text_1">Benvenuto nel tutorial di Fidw4r!</string>
+    <string name="turno_successivo">turno successivo</string>
+    <string name="vittoria">VITTORIA!</string>
+
+    <string name="tutorial_slide1">Tieni premuto per vedere le informazioni relative alla partita</string>
+    <string name="tutorial_slide2"> </string>
+    <string name="tutorial_slide3">In base a quante monete Stroba hai a disposizione, scegli che carte giocare e trascinale sul campo di battaglia.</string>
+    <string name="tutorial_slide4">Una volta scelte le carte da giocare clicca su “termina turno per proseguire”. Puoi inoltre cambiare idea sulla carta posizionata ritrascinandola nella mano prima di terminare il turno.</string>
+    <string name="tutorial_slide5">Nella fase di battaglia puoi vedere che carte ha giocato il tuo avversario e i danni inflitti o ricevuti.\nPer terminare la fase di battaglia clicca su “turno successivo”.</string>
+    <string name="tutorial_slide6">dopo aver giocato il campione che permane nel campo, puoi visualizzare il suo effetto continuo cliccando su di lui</string>
+    <string name="tutorial_slide7"> </string>
+    <string name="tutorial_slide8">per arrenderti fai click su resa e conferma nel pop up</string>
+    <string name="tutorial_slide9"></string>
+    <string name="tutorial_slide10">vinci partite e guadagna trofei per sbloccare gli obiettivi. Buon divertimento!</string>
+
+</resources>

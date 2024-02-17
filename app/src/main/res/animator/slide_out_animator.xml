@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/anim/slide_out.xml -->
+<!-- res/animator/slide_out_right.xml -->
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:propertyName="translationX"
+    android:valueType="floatType"
+    android:valueFrom="-2000"
+    android:valueTo="0"
+    android:duration="500" />

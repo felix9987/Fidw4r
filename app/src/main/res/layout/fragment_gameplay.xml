@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.GameplayFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/game_background"
+        android:id="@+id/GameplayActivityLayout">
+
+        <FrameLayout
+            android:id="@+id/CardDraggedFrame"
+            android:layout_width="@dimen/cardDragged_width"
+            android:layout_height="@dimen/cardDragged_height"
+
+            android:elevation="1dp"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/card_height_hand"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <FrameLayout
+                android:id="@+id/cardPlayed1"
+                android:layout_width="@dimen/card_width_hand"
+                android:layout_height="@dimen/card_height_hand"
+                android:visibility="invisible"
+                android:background="@android:color/transparent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/cardPlayed2"
+                android:layout_width="@dimen/card_width_hand"
+                android:layout_height="@dimen/card_height_hand"
+                android:visibility="invisible"
+                android:background="@android:color/transparent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/cardPlayed3"
+                android:layout_width="@dimen/card_width_hand"
+                android:layout_height="@dimen/card_height_hand"
+                android:visibility="invisible"
+                android:background="@android:color/transparent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/cardPlayed4"
+                android:layout_width="@dimen/card_width_hand"
+                android:layout_height="@dimen/card_height_hand"
+                android:visibility="invisible"
+                android:background="@android:color/transparent">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/cardPlayed5"
+                android:layout_width="@dimen/card_width_hand"
+                android:layout_height="@dimen/card_height_hand"
+                android:visibility="invisible"
+                android:background="@android:color/transparent">
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/heroOpponentImage"
+            android:layout_width="@dimen/hero_dimension"
+            android:layout_height="@dimen/hero_dimension"
+
+            android:elevation="2dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/textOpponentHp"
+            android:elevation="2dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roman_sd"
+            android:gravity="center"
+            android:text="20"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+            app:layout_constraintStart_toStartOf="@id/heroOpponentImage"
+            app:layout_constraintEnd_toEndOf="@id/heroOpponentImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textopponentName"/>
+
+        <ImageView
+            android:id="@+id/opponentChampionImage"
+            android:layout_width="52dp"
+            android:layout_height="70dp"
+            android:rotation="180"
+            android:background="@drawable/rome_champ"
+
+            android:visibility="invisible"
+
+            android:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/backDeckOpponent"
+            app:layout_constraintStart_toStartOf="@id/heroOpponentImage"
+            app:layout_constraintEnd_toEndOf="@id/heroOpponentImage"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textopponentName"
+            android:layout_width="89dp"
+            android:layout_height="16dp"
+
+            android:elevation="3dp"
+
+            android:textColor="@color/franco"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roman_sd"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/heroOpponentImage"
+            app:layout_constraintStart_toStartOf="@id/heroOpponentImage"
+            app:layout_constraintEnd_toEndOf="@id/heroOpponentImage"
+            />
+
+        <ImageView
+            android:id="@+id/backDeckOpponent"
+            android:layout_width="@dimen/card_width_hand"
+            android:layout_height="@dimen/card_height_hand"
+            android:background="@drawable/back_carta"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/heroOpponentImage"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/opponent_info_description"
+            android:layout_width="305dp"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintTop_toBottomOf="@id/backDeckOpponent"
+            app:layout_constraintEnd_toEndOf="@id/backDeckOpponent"
+            android:layout_marginEnd="50dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/hand_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/hand_cards"
+                android:elevation="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintStart_toStartOf="@id/opponent_info_description"
+                app:layout_constraintTop_toTopOf="@id/opponent_info_description"/>
+
+            <ImageView
+                android:id="@+id/deck_opponent_icon"
+                android:layout_width="23dp"
+                android:layout_height="30dp"
+                android:background="@drawable/generic_deck"
+                android:elevation="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="13dp"
+                app:layout_constraintTop_toBottomOf="@id/hand_icon"
+                app:layout_constraintStart_toStartOf="@id/opponent_info_description"
+                app:layout_constraintBottom_toBottomOf="@id/opponent_info_description"/>
+
+            <TextView
+                android:id="@+id/hand_description"
+                android:layout_width="265dp"
+                android:layout_height="40dp"
+
+                android:background="@android:color/transparent"
+                android:elevation="1dp"
+
+                android:text="@string/n_hand_description"
+                android:textColor="@color/franco"
+                android:fontFamily="@font/roman_sd"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="1dp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/hand_icon"
+                />
+            <TextView
+                android:id="@+id/opponent_deck_description"
+                android:layout_width="265dp"
+                android:layout_height="40dp"
+
+                android:background="@android:color/transparent"
+                android:elevation="1dp"
+
+                android:text="@string/n_deck_description"
+                android:textColor="@color/franco"
+                android:fontFamily="@font/roman_sd"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="1dp"
+
+                app:layout_constraintTop_toBottomOf="@id/hand_description"
+                app:layout_constraintStart_toEndOf="@id/hand_icon"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/info_description_back"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/champion_description"
+            android:layout_width="99dp"
+            android:layout_height="82dp"
+
+            android:textColor="@color/franco"
+            android:fontFamily="@font/roman_sd"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+            android:background="@drawable/champ_description_back"
+            android:elevation="5dp"
+
+            android:layout_marginBottom="19dp"
+            app:layout_constraintBottom_toBottomOf="@id/champion_description_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/champion_description_back"
+            android:layout_width="@dimen/cardDragged_width"
+            android:layout_height="@dimen/cardDragged_height"
+            android:elevation="4dp"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/opponentInfographic"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/opponent_scroll"
+            app:layout_constraintLeft_toLeftOf="@id/backDeckOpponent"
+            app:layout_constraintRight_toRightOf="@id/backDeckOpponent"
+            app:layout_constraintBottom_toBottomOf="@id/backDeckOpponent"
+            app:layout_constraintTop_toTopOf="@id/backDeckOpponent"
+            />
+
+        <TextView
+            android:id="@+id/textNCardOpponentDeck"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:textColor="@color/ivan"
+            android:fontFamily="@font/roman_sd"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+            android:text="16"
+            android:background="@android:color/transparent"
+
+
+            app:layout_constraintHorizontal_bias="0.67"
+            app:layout_constraintBottom_toBottomOf="@id/opponentInfographic"
+            app:layout_constraintStart_toStartOf="@id/opponentInfographic"
+            app:layout_constraintEnd_toEndOf="@id/opponentInfographic"
+            app:layout_constraintTop_toBottomOf="@id/textNCardOpponentHand"
+            android:layout_marginBottom="7.5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/NCardOpponentHand"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roman_sd"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@id/heroOpponentImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textNCardOpponentHand"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:textColor= "@color/ivan"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+            android:text="4"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintHorizontal_bias="0.67"
+
+            android:layout_marginTop="7.5dp"
+            app:layout_constraintStart_toStartOf="@id/opponentInfographic"
+            app:layout_constraintEnd_toEndOf="@id/opponentInfographic"
+            app:layout_constraintTop_toTopOf="@id/opponentInfographic"
+            app:layout_constraintBottom_toTopOf="@id/textNCardOpponentDeck"/>
+
+
+
+        <ImageView
+            android:id="@+id/heroPlayerImage"
+            android:layout_width="@dimen/hero_dimension"
+            android:layout_height="@dimen/hero_dimension"
+
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/championImage"
+            android:layout_width="52dp"
+            android:layout_height="70dp"
+            android:background="@drawable/rome_champ"
+            android:visibility="invisible"
+
+            android:elevation="1dp"
+            app:layout_constraintTop_toTopOf="@id/backDeckPlayer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/heroPlayerImage"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/player_info_description"
+            android:layout_width="305dp"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toTopOf="@id/backDeckPlayer"
+            app:layout_constraintStart_toStartOf="@id/backDeckPlayer"
+            android:layout_marginStart="50dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/stroba_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/stroba"
+                android:elevation="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintStart_toStartOf="@id/player_info_description"
+                app:layout_constraintTop_toTopOf="@id/player_info_description"/>
+
+            <ImageView
+                android:id="@+id/deck_icon"
+                android:layout_width="23dp"
+                android:layout_height="30dp"
+                android:background="@drawable/generic_deck"
+                android:elevation="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="13dp"
+                app:layout_constraintTop_toBottomOf="@id/stroba_icon"
+                app:layout_constraintStart_toStartOf="@id/player_info_description"
+                app:layout_constraintBottom_toBottomOf="@id/player_info_description"/>
+
+            <TextView
+                android:id="@+id/stroba_description"
+                android:layout_width="265dp"
+                android:layout_height="40dp"
+
+                android:background="@android:color/transparent"
+                android:elevation="1dp"
+
+                android:text="@string/n_stroba_description"
+                android:textColor="@color/franco"
+                android:fontFamily="@font/roman_sd"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="1dp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/stroba_icon"
+                />
+            <TextView
+                android:id="@+id/deck_description"
+                android:layout_width="265dp"
+                android:layout_height="40dp"
+
+                android:background="@android:color/transparent"
+                android:elevation="1dp"
+
+                android:text="@string/n_deck_description"
+                android:textColor="@color/franco"
+                android:fontFamily="@font/roman_sd"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="1dp"
+
+                app:layout_constraintTop_toBottomOf="@id/stroba_description"
+                app:layout_constraintStart_toEndOf="@id/stroba_icon"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/info_description_back"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/surrender_gui"
+            android:layout_width="340dp"
+            android:layout_height="130dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@android:color/transparent"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrenditi"
+
+                android:background="@android:color/transparent"
+
+                android:textColor="@color/gianmarco"
+                android:fontFamily="@font/roman_sd"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp"
+                android:elevation="3dp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnNotSurrender2"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annulla"
+
+                android:background="@android:color/transparent"
+
+                android:textColor="@color/paolo"
+                android:fontFamily="@font/roman_sd"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp"
+                android:elevation="3dp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnSurrender2"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vuoi arrenderti?"
+
+                android:background="@android:color/transparent"
+
+                android:textColor="@color/franco"
+                android:fontFamily="@font/roman_sd"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:textSize="20sp"
+                android:elevation="2dp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                ></TextView>
+
+            <ImageButton
+                android:id="@+id/btnSurrender2"
+                android:background="@drawable/generic_button2"
+                android:onClick="surrend"
+
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnNotSurrender2"
+                android:elevation="2dp"
+                />
+
+            <ImageButton
+                android:id="@+id/btnNotSurrender2"
+                android:background="@drawable/generic_button2"
+
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnSurrender2"
+                android:elevation="2dp"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/info_description_back"
+                android:elevation="0dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/textPlayerName"
+            android:layout_width="89dp"
+            android:layout_height="16dp"
+
+            android:elevation="3dp"
+
+            android:textColor="@color/franco"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roman_sd"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/heroPlayerImage"/>
+
+
+
+        <ImageView
+            android:id="@+id/backDeckPlayer"
+            android:layout_width="@dimen/card_width_hand"
+            android:layout_height="@dimen/card_height_hand"
+            android:background="@drawable/back_carta"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/heroPlayerImage"/>
+
+        <ImageView
+            android:id="@+id/playerInfographic"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/player_scroll"
+            app:layout_constraintLeft_toLeftOf="@id/backDeckPlayer"
+            app:layout_constraintRight_toRightOf="@id/backDeckPlayer"
+            app:layout_constraintBottom_toBottomOf="@id/backDeckPlayer"
+            app:layout_constraintTop_toTopOf="@id/backDeckPlayer"
+            />
+
+        <TextView
+            android:id="@+id/textPlayerHp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:elevation="2dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roman_sd"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+            android:text="20"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintTop_toTopOf="@id/heroPlayerImage"
+            app:layout_constraintBottom_toTopOf="@id/textPlayerName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/heroPlayerImage"
+            />
+
+        <TextView
+            android:id="@+id/textNCardDeck"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:textColor="@color/ivan"
+            android:fontFamily="@font/roman_sd"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+            android:text="16"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintHorizontal_bias="0.67"
+            app:layout_constraintBottom_toBottomOf="@id/playerInfographic"
+            app:layout_constraintStart_toStartOf="@id/playerInfographic"
+            app:layout_constraintEnd_toEndOf="@id/playerInfographic"
+            app:layout_constraintTop_toBottomOf="@id/stroba"
+            android:layout_marginBottom="7.5dp"
+            />
+
+        <FrameLayout
+            android:id="@+id/cardPlayer1"
+            android:layout_width="@dimen/card_width_hand"
+            android:layout_height="@dimen/card_height_hand"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+
+            android:layout_marginLeft="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/backDeckPlayer">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cardPlayer2"
+            android:layout_width="@dimen/card_width_hand"
+            android:layout_height="@dimen/card_height_hand"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardPlayer1">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cardPlayer3"
+            android:layout_width="@dimen/card_width_hand"
+            android:layout_height="@dimen/card_height_hand"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardPlayer2">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cardPlayer4"
+            android:layout_width="@dimen/card_width_hand"
+            android:layout_height="@dimen/card_height_hand"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardPlayer3">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cardPlayer5"
+            android:layout_width="@dimen/card_width_hand"
+            android:layout_height="@dimen/card_height_hand"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardPlayer4">
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btnSurrender"
+            android:background="@drawable/surrender_button"
+
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/surrendTextView"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="Resa"
+            android:textColor="@color/franco"
+            android:fontFamily="@font/roman_sd"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+            app:layout_constraintRight_toRightOf="@id/btnSurrender"
+            app:layout_constraintBottom_toBottomOf="@id/btnSurrender"
+            app:layout_constraintTop_toTopOf="@id/btnSurrender"
+            app:layout_constraintLeft_toLeftOf="@id/btnSurrender"
+            android:layout_marginBottom="5dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btnPass"
+            android:background="@drawable/pass_button"
+
+            android:onClick="endTurn"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+        <TextView
+            android:id="@+id/turnTextView"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:text="@string/pass"
+            android:textColor="@color/paolo"
+            android:fontFamily="@font/roman_sd"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+            app:layout_constraintRight_toRightOf="@id/btnPass"
+            app:layout_constraintBottom_toBottomOf="@id/btnPass"
+            app:layout_constraintTop_toTopOf="@id/btnPass"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:id="@+id/turnTextViewSurrend"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:background="@android:color/transparent"
+            android:text="Turno 1"
+            android:textColor="@color/franco"
+            android:fontFamily="@font/roman_sd"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+            android:alpha="0.64"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible"
+            ></TextView>
+
+
+        <TextView
+            android:id="@+id/stroba"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:textColor= "@color/ivan"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1dp"
+            android:text="1"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintHorizontal_bias="0.67"
+
+            android:layout_marginTop="7.5dp"
+            app:layout_constraintStart_toStartOf="@id/playerInfographic"
+            app:layout_constraintEnd_toEndOf="@id/playerInfographic"
+            app:layout_constraintTop_toTopOf="@id/playerInfographic"
+            app:layout_constraintBottom_toTopOf="@id/textNCardDeck"/>
+
+        <TextView
+            android:id="@+id/remainingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+
+            android:alpha="0.44"
+            android:text="60"
+            android:gravity="center"
+            android:textColor="@color/franco"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roman_sd"
+            android:textStyle="bold"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

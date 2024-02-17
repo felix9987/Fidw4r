@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:onClick="goToMenu"
+    android:background="@android:color/transparent"
+    tools:context=".vista.ResultFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/gameResult"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:text="@string/vittoria"
+        android:fontFamily="@font/roman_sd"
+        android:background="@android:color/transparent"
+        android:textColor="@color/franco"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/graphicEndgame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/earnedTrophies"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/graphicEndgame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/trophy_icon1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/trophy"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/trophiesResultFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="440"
+            android:textSize="15sp"
+            android:textColor="@color/franco"
+            android:fontFamily="@font/roman_sd"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ImageView
+        android:id="@+id/graphicEndgame"
+        android:layout_width="375dp"
+        android:layout_height="195dp"
+        android:background="@drawable/victory"
+
+        app:layout_constraintTop_toBottomOf="@id/gameResult"
+        app:layout_constraintBottom_toTopOf="@id/earnedTrophies"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

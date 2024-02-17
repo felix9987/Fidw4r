@@ -1,0 +1,327 @@
+<resources>
+    <string name="app_name">Fidw4r</string>
+    <string name="password">PASSWORD</string>
+    <string name="conferma">CONFIRM</string>
+    <string name="username">USERNAME</string>
+    <string name="registrati">SIGN IN</string>
+    <string name="accedi">LOGIN</string>
+    <string name="ospite">GUEST</string>
+    <string name="email">EMAIL</string>
+    <string name="conferma_password">CONFIRM PASSWORD</string>
+    <string name="benvenuto">WELCOME</string>
+    <string name="loggato">USER ALREADY LOGGED IN</string>
+    <string name="non_ottenuto">User not obtained</string>
+    <string name="credenziali_non_valide">Invalid credentials</string>
+    <string name="utente_errato">Invalid User</string>
+    <string name="probelma_di_rete">Network Error"</string>
+    <string name="troppe_richeste">Too many requests. Wait before trying to log in again"</string>
+    <string name="errore_login">Error. Log in was not possible</string>
+    <string name="login_in_corso">Logging in</string>
+    <string name="formato_corretto">Use the right format</string>
+    <string name="caratteri_psw">Insert a password with at least 8 characters</string>
+    <string name="password_diverse">Passwords not matching</string>
+    <string name="inserisci_username">Insert Username</string>
+    <string name="registrazione_avvenuta">Sign up successful</string>
+    <string name="mail_esistente">Email already used</string>
+    <string name="password_debole">Password not safe enough</string>
+    <string name="accesso_negato">Access Denied</string>
+
+
+    //GameplayActivity
+
+    <string name="avversario_ritirato">Opponent retired</string>
+    <string name="attesa_avversario">WAITING FOR OPPONENT</string>
+    <string name="avversario_disconnesso">OPPONENT HAS BEEN DISCONNECTED</string>
+    <string name="attesa_riconnessione">WAITING FOR CONNECTION...</string>
+    <string name="connesione_persa_avversario">Opponent lost connection</string>
+    <string name="connesione_persa_giocatore">you lost connection</string>
+    <string name="wifi_interrotto">WIFI CONNECTION HAS BEEN INTERRUPTED</string>
+    <string name="ti_rimangono">YOU HAVE</string>
+    <string name="secondi">SECONDS</string>
+    <string name="partita_persa">TO RECONNECT OR YOU\'LL LOSE THE MATCH</string>
+
+    //MenuGameActivity
+    <string name="ospite_negato">IMPOSSIBLE TO PLAY AS GUEST</string>
+    <string name="usare_account">"YOU MUST USE AN ACCOUNT TO PLAY"</string>
+
+    //PlayActivity
+    <string name="connessione_lunga">CANNOT CONNECT IN TIME</string>
+    <string name="internet_necessario">INTERNET NOT ENABLED. TURN IT ON TO PLAY</string>
+    <string name="problema_connessione">CONNECTION ERROR. RETRY</string>
+    <string name="rete_inaccessibile">CANNOT ACCESS THE NETWORK</string>
+    <string name="errore_ricerca">ERROR DURING RESEARCH,</string>
+    <string name="riprova">RETRY</string>
+
+    //BattleFragment
+    <string name="cinque_carte">YOU CANNOT PLAY 5 CARDS TOGHETER</string>
+
+    //GameplayFragment
+    <string name="troppe_carte">TOO MANY CARDS IN YOUR HAND. ONE HAS BEEN DESTROYED</string>
+
+    //ResultFragment
+    <string name="hai_perso">YOU LOSE</string>
+    <string name="pareggio">DRAW</string>
+
+
+
+
+
+
+
+
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //ROMANI
+    <string name="rome">Rome</string>
+
+    <string name="legionari">Legionaries</string>
+    <string name="legionari_effect">Recall 1 copy of this troop.</string>
+    <string name="legionari_description">The Roman legionary was the foot soldier who was part of the Roman legion. The Romans had to face a variety of populations that adopted different methods of combat; this affected both the organization and structure of the legion and the type of armament used. The legionnaire has always been a source of inspiration and a model from a military point of view because of his skills, experience, and efficiency.</string>
+
+    <string name="centurioni">Centurions</string>
+    <string name="centurioni_effect">Inflicts 2 damage on the opposing hero.</string>
+    <string name="centurioni_description">The centurion was one of the ranks in the chain of command in the Roman Army, heading a centuria, comparable to modern middle-ranking officers. Roman centurions were always positioned in the front line, to demonstrate their courage and impetus to their soldiers for the purpose of successful battle, at least from the time of the Punic Wars.</string>
+
+    <string name="gladiatiori">Gladiators</string>
+    <string name="gladiatori_effect">Recall 2 copy of this troop.</string>
+    <string name="gladiatori_description">The gladiator, was a particular wrestler of ancient Rome. The name is derived from gladius, the sword used by Roman legionaries also used by wrestlers. Gladiators fought in specific spectacles called munera for the performance of which the architectural structure of the amphitheater was developed. The origin of the figure of the gladiator is related to the institution of the so-called munus, the duty/obligation owed by wealthy families to their dead, during which armed men, in the presence of a referee, fought to honor the deceased.</string>
+
+    <string name="bighe">Race Bigas</string>
+    <string name="bighe_effect">Add 1 attack point to all yours troop you summon in this turn.</string>
+    <string name="bighe_description">The biga was the war chariot, or pomp magna or jousting chariot, used in classical times. Chariots generally were two-seater and were attached to 2 or more horses, were uncovered with a canopy, and generally had a semicircular front part. The open rear part allowed the charioteer to ride on it.</string>
+
+    <string name="terme">Termae romane</string>
+    <string name="terme_effect">Earn 2 hit point for each troop you summon in the latest turn.</string>
+    <string name="terme_description">Roman baths were public buildings equipped with facilities that today would be called sanitation. They represented one of the main gathering places during ancient Rome, beginning in the 2nd century BC. Almost anyone, even the poorest, could have access to the baths, as in many establishments entry was free or almost free. The many baths were a place for socializing, relaxing, and developing living activities for men and women, in separate spaces and at separate times.</string>
+
+    <string name="testuggine">Testudo Formation</string>
+    <string name="testuggine_effect">Inflict 1 hit point for each troop played in this turn.</string>
+    <string name="testuggine_description">The Roman tortoise was a characteristic infantry formation of the Roman army. A deployment of great complexity, it required considerable collective coordination. It was designed specifically for a squad of legionnaires, armed with the gladius and, in particular, with the broad and sturdy quadrangular shield supplied to the legions. It gave the great advantage of being able to advance until contact with the first enemy ranks while sheltering from arrows and bullets and concealing the real number of members, so as to generate a surprise effect. Because of the protection it offered, this formation was particularly used during sieges.</string>
+
+    <string name="necropoli">Necropolis</string>
+    <string name="necropoli_effect">Draw a card for each troop destroba in the previous turn.</string>
+    <string name="necropoli_description">In Roman times a fundamental legal provision, which had to be respected by the entire community, mandated the burial of the dead outside the city limits. This was determined both by obvious hygienic reasons and for reasons of superstition that wanted the world of the living rigidly separated from that of the dead, a rule that was also applied by those who resided in villages or isolated dwellings. Necropolises were therefore arranged either in the suburbs of cities, along major roadways or in the countryside adjacent to fields, either on the main centurial axes or on internal roads.</string>
+
+    <string name="colosseo">Coliseum</string>
+    <string name="colosseo_effect">Summon 2 Glagladiators without effect. This effect is triggered also in the next turn.</string>
+    <string name="colosseo_description">The Coliseum, originally known as the Flavian Amphitheater or simply Amphitheatrum, located in the center of the city of Rome, is the largest Roman amphitheater in the world (capable of holding an estimated 50,000 to 87,000 spectators). The Colosseum hosted the games of the amphitheater, which included: animal fights (venationes), the killing of condemned men by ferocious animals or other types of executions (noxii), and gladiator fights (munera). The activities followed a codified schedule: in the morning there were fights between animals or between a gladiator and an animal, at lunchtime the death sentences were carried out, and only in the afternoon were gladiator fights held.</string>
+
+    <string name="spartaco">Spartacus</string>
+    <string name="spartaco_effect">When it is summoned add 1 attack point to the others troops.</string>
+    <string name="spartaco_description">Spartacus was a Thracian gladiator and leader who spearheaded the slave revolt known as the Third Servile War, the most challenging of its kind that Rome faced.</string>
+
+    <string name="bruto">Brutus</string>
+    <string name="bruto_effect">When summoned, it subtracts 2 life points (if possible) and doubles its strength.</string>
+    <string name="bruto_description">Marcus Junius Brutus, officially known after his adoption as Quintus Servilius Cepion Brutus (Quintus Servilius Caepio Brutus), was a Roman politician, orator, philosopher and scholar, a senator of the late Roman Republic and one of Julius Caesar\'s assassins; in fact, he was one of the preeminent figures in the conspiracy of the Ides of March along with Gaius Cassius Longinus and Decimus Brutus.</string>
+
+    <string name="romoloremo">Romulus and Remus</string>
+    <string name="romoloremo_effect">If it is summoned before the other Champions double the attack value.</string>
+    <string name="romoloremo_description">Romulus and Remus are, in Roman mythological tradition, twin brothers, one of whom, Romulus, was the eponymous founder of the city of Rome and its first king. The founding date is traditionally given as April 21, 753 BC. According to legend, they were sons of Rea Silvia, a descendant of Aeneas, and Mars.</string>
+
+    //PERSIANI
+    <string name="persia">Persis</string>
+
+    <string name="sparabara">Sparabara</string>
+    <string name="sparabara_effect">Regenerate 1 life point.</string>
+    <string name="sparabara_description">The sparabara were front-line infantrymen employed in the battles waged by the Persian Empire, came from every stratum of Persian society and were educated from an early age in the military art, and when not employed in campaigns far from their country they engaged in farming and hunting on the vast plains of Persis.</string>
+
+    <string name="arcieri_persiani">Persian bowmen</string>
+    <string name="arcieri_persiani_effect">Regenerates 2 life points.</string>
+    <string name="arcieri_persiani_description">Few Persians were professional soldiers, and apart from the early Achaemenid Immortals and a few mercenary hoplites, none were trained. Conscript infantry included soldiers armed with slingers, bows or javelins, all wearing light armor, but some carried shields.</string>
+
+    <string name="immortali">Immortals</string>
+    <string name="immortali_effect">Half of the damage you take this turn is inflicted on your opponent.</string>
+    <string name="immortali_description">The Immortals were the elite unit of the Great Persian King\'s imperial guard. They were chosen troops recruited from among the Persian nobles and trusted comrades under the direct orders of the divine Great King. They shared everything: the hardships and privations, the honor and glory, the forced marches and the sleeping place in tents. 10,000, always.</string>
+
+    <string name="satrapi">Satrapies</string>
+    <string name="satrapi_effect">Draw a card and regenerate 2 life points.</string>
+    <string name="satrapi_description">Satrap was the name given to the governors of the provinces, called precisely "satrapies," of the ancient Persian empires, namely the Achaemenid Empire, the Parthian Empire and the Sasanian Empire, and some Hellenistic kingdoms.</string>
+
+    <string name="elefanti">Battle elephants</string>
+    <string name="elefanti_effect">Regenerates 4 life points and 1 additional life point for each opposing troop on the field.</string>
+    <string name="elefanti_description">Battle elephants were important, though not widely used, weapons in ancient military history. They were mainly used in charges to disrupt enemy ranks. War elephants were exclusively male animals, chosen because they were faster, heavier, and more aggressive than females.</string>
+
+    <string name="shamshir">Shamshir</string>
+    <string name="shamshir_effect">Regenerates 1 life point for each opposing troop on the field.</string>
+    <string name="shamshir_description">The Shamshir, also Shamsheer or Chimchir, is the Persian scimitar, developed in the 11th century by the Seljuk Turks from the model of the kilij, the "classical" Turkish scimitar. The word means, in the Persian language, both "sword" and "curved like the lion's claw."</string>
+
+    <string name="arco_persiano">Parthian-Persian bow</string>
+    <string name="arco_persiano_effect">The damage inflicted is also inflicted on the opponent.</string>
+    <string name="arco_persiano_description">The Parthian-Persian bow is a recurved, symmetrical composite bow made of ibex horn, wood, and gazelle or deer sinew. This type of weapon was subjected to considerable pressure. Experts claim that without a string, the Parthian-Persian bow would have folded back on itself until the "arms" crossed.</string>
+
+    <string name="alessandro_magno">Alexander the Great</string>
+    <string name="alessandro_magno_effect">You gain one life point for each troop you summon.</string>
+    <string name="alessandro_magno_description">Alexander III of Macedon, universally known as Alexander the Great was an ancient Macedonian military leader and military man, king of Macedon of the Argeads dynasty from 336 BC. The term "magno" comes from the Latin magnus "great," which translates the ancient Greek word mégas. Also known as Alexander the Great, Alexander the Conqueror or Alexander the Macedonian, he is considered one of the most celebrated conquerors and strategists in history.</string>
+
+    <string name="seleuco">Seleucus I Nicator</string>
+    <string name="seleuco_effect">It deals damage to the opponent equal to the attack of his most powerful troop.</string>
+    <string name="seleuco_description">Seleucus Nicator, called Seleucus I in modern historiography, was an ancient Macedonian ruler. He was first diadocrat of Alexander the Great and then the first ruler of the Seleucid empire, which was named after him. When Alexander died, his office corresponded to that of a current minister, at the second division of the empire, which took place in 321 B.C. He received the satrapy of Babylon.</string>
+
+    <string name="ciro">Cyrus II of Persis</string>
+    <string name="ciro_effect">You randomly subtract a troop from the opponent and summon it to your field.</string>
+    <string name="ciro_description">Cyrus II of Persis, known as Cyrus the Great, was a Persian emperor and descendant of Cyrus I of Persis, a member of that line of Theispids who had controlled Persia for some time. Known as the founder of the Persian Empire, Cyrus succeeded his father Cambyses I, freed the Persians from Median rule, and was the natural heir to the great Middle Eastern monarchies.</string>
+
+    //SPARTANI
+    <string name="sparta">Sparta</string>
+
+    <string name="iloti">Helots</string>
+    <string name="iloti_effect">Inflicts 1 damage to both heroes.</string>
+    <string name="iloti_description">The Helots were, in the social system of Sparta, a part of the population of the territory dominated by the Greek polis living in a state of slavery. They were descendants of those who inhabited Laconia before the invasion by the Dorians, which occurred around the 10th century B.C., who were later joined in the 8th and 7th centuries by the inhabitants of Messenia after the conquest of their region by Sparta.</string>
+
+    <string name="spartiati">Spartiates</string>
+    <string name="spartiati_effect">Inflicts 3 damage to the opposing hero</string>
+    <string name="spartiati_description">The Spartiates were the direct descendants of the Dorians and citizens by right, who ruled the city by taking part in the apèlla. In battle they had the reputation of being the best soldiers in ancient Greece: the strength of its hoplites enabled Sparta to gain hegemony in Greece for much of the classical period.</string>
+
+    <string name="trecento">King Leonidas\' 300</string>
+    <string name="trecento_effect">you take no damage this turn.</string>
+    <string name="trecento_description">The Persians, after the snub they had suffered a few years earlier near Athens, decided to undertake a new invasion and to carry it out during the holding of the Olympic Games, which included a truce. The Greeks decided to leave to go and defend the motherland; leading the Greek expedition was the king of Sparta, Leonidas. Herodotus relates that he took 300 men and headed for Themopolis.</string>
+
+    <string name="menelao">Menelaus</string>
+    <string name="menelao_effect">Inflict damage every time a troop is summoned.</string>
+    <string name="menelao_description">Menelaus is a character in Greek mythology, son of Atreus and Herop and younger brother of Agamemnon. He is the king of Sparta and husband of Helen, whom Paris brought to Troy, causing the Greek expedition against the city. In the Homeric texts the epithet that accompanies him is blond, making him a character of great beauty.Menelaus constitutes a typical example of kalokagathia, being also very valiant in war.</string>
+
+    <string name="falange">Spartan Phalanx</string>
+    <string name="falange_effect">If you have less than 12 hp it deals 4 damage to the opposing hero</string>
+    <string name="falange_description">The phalanx is an ancient combat formation composed of heavy infantry whose soldiers are armed with spears or pikes, shields and sword. Typical of the Greek and Hellenistic world, it was also adopted by other peoples who modified its characteristics and functions until the Renaissance era, where with the advent of firearms it lost its importance.</string>
+
+    <string name="taigeto">Taigeto Mountain</string>
+    <string name="taigeto_effect">draw 2 cards and inflict 2 direct damage</string>
+    <string name="taigeto_description">"Children born to both Sparta parents are examined by the elders and, if not judged physically fit, abandoned to die on Mount Taigeto." This is the harsh law of Sparta, the law that elevates men to warriors.</string>
+
+    <string name="oplon">Oplon</string>
+    <string name="oplon_effect">It deals 5 damage to the enemy hero.</string>
+    <string name="oplon_description">The oplon was the distinctive shield of the hoplite, the heavy infantry soldier of ancient Greece. Also known as the "hollow shield," or "argivo shield," it constitutes one of the most important variants of the aspis, the traditional Greek shield.</string>
+
+    <string name="cavalleria">chivalry</string>
+    <string name="cavalleria_effect">inflict 3 damage on both heroes</string>
+    <string name="cavalleria_description">A 400-man cavalry corps was created in 424 B.C.E. Although it was a poor department of the Spartan army, the horses belonged to the wealthiest and the men gave saddles when mobilized for battle. The role of the horsemen was mostly one of assistance, a role devoted to scouting and protecting troops, harassing them at a distance or pursuing the enemy while fleeing.</string>
+
+    <string name="termopili">thermopylae</string>
+    <string name="termopili_effect">Summon 4 troops with two attack</string>
+    <string name="termopili_description">The Battle of Thermopylae, was a battle fought by an alliance of Greek poleis, led by the king of Sparta Leonidas I, against the Persian Empire ruled by Xerxes I. It took place over three days during the second Persian invasion of Greece in August or September 480 BCE near the narrow passage of Thermopylae, at the same time as the naval battle of Cape Artemisius.</string>
+
+    <string name="gorgo">gorgo</string>
+    <string name="gorgo_effect">if you have less hp than the opponent double the attack</string>
+    <string name="gorgo_description">Gorgo was a Spartan queen, wife of Leonidas I, the king who fought and died at the Battle of Thermopylae. Daughter, wife, and mother of three different kings of Sparta-Cleomenes I, Leonidas I, and Plistarchus respectively-Gorgo is one of the very few female historical figures to be named by Herodotus for her political acumen and wisdom.</string>
+
+    <string name="ippocatre">Hippocrates</string>
+    <string name="ippocatre_effect">If you have 12 or less hp it deals 5 damage to the opponent</string>
+    <string name="ippocrate_description">Hippocrates was a Spartan admiral; he is first mentioned when he was sent to Euboea with Epicles to take Agesandrida\'s fleet from there, which was no longer safe there after Mindaro had been defeated at Cinossema (411 BC). He then returned with Agesandrida to the Hellespont, where he was appointed Mindaro\'s deputy for subsequent operations. After the disastrous defeat at Cyzicus Hippocrates, who became commander because of Mindaro\'s death, sent Sparta this famous message, intercepted by the Athenians: "The ships are lost. Mindaro is dead. The men are hungry. We do not know what to do."</string>
+
+
+
+    <string name="egypt">Egypt</string>
+
+    <string name="schiavi">slaves</string>
+    <string name="schiavi_effect">it\'s okay, he\'s a slave what do you expect!</string>
+    <string name="schiavi_description">During the Old Kingdom (2686-2173 BCE), the only known form of "slavery," apart from prisoners of war, was corvée or forced labor in the countryside. The rich paid to exempt themselves from this obligation, while the poorer had to submit to it and if they attempted to escape, they were punished with slavery for life.</string>
+
+    <string name="hyksos">hyksos</string>
+    <string name="hyksos_effect">Inflicts one damage for every other copy of this card you have conjured in the game</string>
+    <string name="hyksos_description">The term hyksos, a Greek form of the Egyptian heka khasut, is generally used to define the peoples who penetrated Egypt at the end of the period of Egyptian history referred to as the Middle Kingdom and ruled northern Egypt and part of the south in the Second Intermediate Period, between 1720 and 1530 BCE. Specifically called hyksos are the six pharaohs of the Fifteenth Dynasty (ca. 1650-1550 BCE). The political center of power of the hyksos was the city of Avaris, which they founded in the Nile delta.</string>
+
+    <string name="piramide">pyramid</string>
+    <string name="piramide_effect">the next card you play this turn is played twice</string>
+    <string name="piramide_description">Egyptian pyramids are pyramid-shaped architectural constructions with mostly square or sometimes rectangular bases. Most scholars believe, although there is no evidence or cartouche or inscription in any of the known pyramids and although no evidence of such use has been found (bodies or grave goods, drawings or decorations or references of any kind), that they were constructions that were part of a larger funerary complex for ancient Egyptian rulers.</string>
+
+    <string name="visir">vizier</string>
+    <string name="visir_effect">draws a card</string>
+    <string name="visir_description">The term vizier, denoted a high official in the Muslim/Ottoman court of a sultan, emir or caliph. Anachronistically, therefore, this term is used and universally accepted, in the archaeo-historical field, to translate the ancient Egyptian ṯaty who was, in fact, the highest official in the Pharaonic court administration, second only to the king.</string>
+
+    <string name="nave">ship</string>
+    <string name="nave_effect">inflict one damage for each troop summoned by you in this game</string>
+    <string name="nave_description">Egyptian ships show the high degree of perfection achieved by shipbuilders in ancient Egypt. The outer lines of the ship have the graceful curves of racing craft. The tall, narrow sail has been replaced with a much larger one, as wide as the other was tall, with a boom that can now be oriented according to the wind, well above the deck.</string>
+
+    <string name="sacerdoti">Lector priest</string>
+    <string name="sacerdoti_effect">care of 4 your hero</string>
+    <string name="sacerdoti_description">kher-heb or khery-heb is the name by which a class of priests was designated in ancient Egypt. It was used to refer to the priest-readers who were responsible for declaiming sacred formulas during worship. Later the term came to be associated with the priests in charge of funeral rites in the necropolis, with the task of pronouncing the ritual magic formulas to allow the deceased to live in the Iaru Fields. He was depicted dressed with a white sash crossed over his chest.</string>
+
+    <string name="micerino">Menkheres</string>
+    <string name="micerino_effect">care of 5 your hero. Draw a card</string>
+    <string name="micerino_description">Menkaura was an Egyptian ruler of the Fourth Dynasty, better known by the Hellenized name Menkheres. Sometimes the name may also appear as Micherinus. Archaeological evidence allows us to establish that he was the immediate successor of Chephren, his father. Menkheres is famous for his tomb, the Pyramid of Menkheres, at Giza, and for the statuary triads depicting him flanked by deities or his consorts Khamerernebti II and Rakhetra.</string>
+
+    <string name="chefren">Khafre</string>
+    <string name="chefren_effect">inflict 4 damage on the enemy hero and heal your hero by 4</string>
+    <string name="chefren_description">Khafre (... - 2532 BC) was a pharaoh of the Fourth Dynasty of Egypt. It is likely that Chephren was the son of Cheops and therefore half-brother of Kheper. One possible reconstruction of the events surrounding the succession of Cheops is as follows: since Kuaf, the first-born son and predestined successor, had already died, according to one version of events killed by Kheper, the struggle for succession took place precisely between Kheper and Chephren (another son of Medjedu, Hardedef, still remembered in the New Kingdom as a savant, did not enter the contest).</string>
+
+    <string name="cheope">Khufu</string>
+    <string name="cheope_effect">inflict 1 damage to enemy hero, heal your hero by 1 for each turn from the next</string>
+    <string name="cheope_description">Cheops, Hellenization of the original Khufu (... - 2566 BC), was an Egyptian ruler of the Fourth Dynasty. He reigned succeeding his possible father, Snefru. He is commonly believed to have commissioned the Great Pyramid of Giza, one of the Seven Wonders of the World, but many other aspects of his reign are poorly documented.</string>
+
+
+    <string name="ricerca_in_corso">Research in progress...</string>
+    <string name="search_match">search match</string>
+    <string name="collection_text_herochoice">Explore the cards</string>
+    <string name="chooseYourHero">Choose your deck!</string>
+    <string name="gioca">play</string>
+    <string name="obbiettivi">goals</string>
+    <string name="collezione">collection</string>
+    <string name="volume">Volume</string>
+    <string name="lingua">Language</string>
+    <string name="esci">logout</string>
+    <string name="crediti">credits</string>
+    <string name="pass">pass round 1</string>
+    <string name="tutorial">Follow tutorial</string>
+    <string name="backs">Backs</string>
+    <string name="leaderboard">Leaderboard</string>
+
+    <string name="back_choice">Choose which back you want to use!</string>
+
+    <string name="n_deck_description">Amount of cards in the deck</string>
+    <string name="n_stroba_description">Stroba usable during turn</string>
+    <string name="n_hand_description">Amount of cards in your opponent\'s hand</string>
+
+    //Achievements
+    <string name="achievement_title_1">Veni, Vidi, Vici</string>
+    <string name="achievement_description_1">Win 4 games using Romans</string>
+    <string name="unlock_deck1">Persis unlocked</string>
+
+    <string name="achievement_title_2">Prince of Persia</string>
+    <string name="achievement_description_2">Win 4 games using Persians</string>
+    <string name="unlock_deck2">Spartans unlocked</string>
+
+    <string name="achievement_title_3">This is Sparta!</string>
+    <string name="achievement_description_3">Win 4 games using Spartans</string>
+    <string name="unlock_deck3">Egypt unlocked</string>
+
+    <string name="achievement_title_4">The Mummy</string>
+    <string name="achievement_description_4">Win 4 games using Egyptians</string>
+    <string name="unlock_deck4">All Decks have been unlocked</string>
+
+    <string name="achievement_title_5">The die is cast</string>
+    <string name="achievement_description_5">Achieve 700 trophies</string>
+    <string name="unlock_back1">Roman Back Unlocked</string>
+
+    <string name="achievement_title_6">Panta Rei</string>
+    <string name="achievement_description_6">Achieve 800 trophies</string>
+    <string name="unlock_back2">Persis Back Unlocked</string>
+
+    <string name="achievement_title_7">Tonight We Dine in Hell</string>
+    <string name="achievement_description_7">Achieve 900 trophies</string>
+    <string name="unlock_back3">Spartan Back Unlocked</string>
+
+    <string name="achievement_title_8">Ode to the Emperor</string>
+    <string name="achievement_description_8">Achieve 1000 trophies</string>
+    <string name="unlock_back4">Egypt Back Unlocked</string>
+
+    <string name="turn">PASS ROUND</string>
+
+    <string name="tutorial_text_1">Welcome to Fidw4r\'s tutorial!</string>
+    <string name="turno_successivo">next turn</string>
+    <string name="vittoria">TOU WIN!</string>
+
+    <string name="tutorial_slide1">Press and hold to see information about the match</string>
+    <string name="tutorial_slide2"> </string>
+    <string name="tutorial_slide3">Based on how many Stroba coins you have available, choose which cards to play and drag them onto the battlefield</string>
+    <string name="tutorial_slide4">Once you have chosen the cards to play, click on "end turn to continue." You can also change your mind about the placed card by dragging it back into your hand before ending your turn</string>
+    <string name="tutorial_slide5">In the battle phase you can see what cards your opponent has played and the damage inflicted or received.\n To end the battle phase click on "next turn."</string>
+    <string name="tutorial_slide6">after playing the sample that lingers in the field, you can view its continuous effect by clicking on it</string>
+    <string name="tutorial_slide7"> </string>
+    <string name="tutorial_slide8">to surrender click on surrender and confirm in the pop up</string>
+    <string name="tutorial_slide9"></string>
+    <string name="tutorial_slide10">Win matches and earn trophies to unlock goals. Have fun!</string>
+
+
+</resources>

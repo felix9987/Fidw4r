@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/backgroundCard"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <ImageView
+        android:id="@+id/cardImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    />
+
+    <TextView
+        android:id="@+id/cardStroba"
+        android:layout_width="9dp"
+        android:layout_height="16dp"
+        android:background="@android:color/transparent"
+
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/romans"
+        android:gravity="center"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="@+id/cardImage"
+        app:layout_constraintEnd_toEndOf="@+id/cardImage"
+        app:layout_constraintStart_toStartOf="@+id/cardImage"
+        app:layout_constraintTop_toTopOf="@+id/cardImage"
+
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/cardName"
+        android:layout_height="16dp"
+        android:layout_width="55dp"
+
+        android:textColor="@color/white"
+        android:gravity="center"
+
+        android:fontFamily="@font/romans"
+        android:background="@android:color/transparent"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+
+        app:layout_constraintStart_toStartOf="@+id/cardImage"
+        app:layout_constraintEnd_toEndOf="@+id/cardImage"
+        app:layout_constraintTop_toTopOf="@+id/cardImage"
+        app:layout_constraintBottom_toBottomOf="@+id/cardImage"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.51"
+        />
+
+    <TextView
+        android:id="@+id/cardEffect"
+        android:layout_width="72dp"
+        android:layout_height="26dp"
+
+        android:textColor="@color/white"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/romans"
+        android:gravity="center"
+
+        app:layout_constraintTop_toTopOf="@+id/cardImage"
+        app:layout_constraintBottom_toBottomOf="@+id/cardImage"
+        app:layout_constraintStart_toStartOf="@+id/cardImage"
+        app:layout_constraintEnd_toEndOf="@+id/cardImage"
+
+        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.22"/>
+
+    <TextView
+        android:id="@+id/cardAttack"
+        android:layout_width="9dp"
+        android:layout_height="16dp"
+        android:background="@android:color/transparent"
+
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/black"
+        android:fontFamily="@font/romans"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="@+id/cardImage"
+        app:layout_constraintStart_toStartOf="@+id/cardImage"
+        app:layout_constraintTop_toTopOf="@+id/cardImage"
+        app:layout_constraintBottom_toBottomOf="@+id/cardImage"
+
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintVertical_bias="0.917"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
