@@ -49,9 +49,10 @@ public class MenuFragment extends Fragment {
         ((TextView)this.requireView().findViewById(R.id.playTextView)).setText("TUTORIAL");
 
         this.requireView().findViewById(R.id.btnPlay).setOnClickListener(view -> getParentFragmentManager().beginTransaction()
+                .replace(R.id.menuView, new GifFragment())
                 .addToBackStack(null)
-                .replace(R.id.menuView, new TutorialFragment())
                 .setCustomAnimations(R.animator.slide_in_animator,R.animator.slide_out_animator)
+                .add(R.id.menuView, new TutorialFragment())
                 .commit());
 
 

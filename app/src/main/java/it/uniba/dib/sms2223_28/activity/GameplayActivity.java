@@ -370,7 +370,7 @@ public class GameplayActivity extends AppCompatActivity {
         cardsBackOpponent.setImageResource(backIdOpponent);
 
         BackgroundMusic.stop();
-        BackgroundMusic.setMusicFlag(true);
+        BackgroundMusic.setMusicFlag(false);
         BackgroundMusic.start(getApplicationContext(),R.raw.battle_music);
 
     }

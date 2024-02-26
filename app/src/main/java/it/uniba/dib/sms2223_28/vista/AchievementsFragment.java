@@ -20,8 +20,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import it.uniba.dib.sms2223_28.R;
 import it.uniba.dib.sms2223_28.activity.MenuGameActivity;
-import it.uniba.dib.sms2223_28.modello.Constants;
-
 
 public class AchievementsFragment extends Fragment {
 
@@ -59,10 +57,10 @@ public class AchievementsFragment extends Fragment {
 
         databaseReference = FirebaseDatabase.getInstance("https://dbgiococarte-default-rtdb.europe-west1.firebasedatabase.app/").getReference();
 
-        manageVictories(R.id.textRedeem1, R.id.achievementImage1);
-        manageVictories(R.id.textRedeem2, R.id.achievementImage2);
-        manageVictories(R.id.textRedeem3, R.id.achievementImage3);
-        manageVictories(R.id.textRedeem4, R.id.achievementImage4);
+        manageVictories(R.id.textRedeem1, R.id.achievementImage1, ROME);
+        manageVictories(R.id.textRedeem2, R.id.achievementImage2, PERSIA);
+        manageVictories(R.id.textRedeem3, R.id.achievementImage3,SPARTA);
+        manageVictories(R.id.textRedeem4, R.id.achievementImage4,EGYPT);
         manageAchievement(TROPHIES_TO_UNLOCK_ROMAN_BACK, R.id.textRedeem5,R.id.achievementImage5,R.id.backAchievement5);
         manageAchievement(TROPHIES_TO_UNLOCK_PERSIA_BACK, R.id.textRedeem6,R.id.achievementImage6,R.id.backAchievement6);
         manageAchievement(TROPHIES_TO_UNLOCK_SPARTA_BACK,R.id.textRedeem7, R.id.achievementImage7,R.id.backAchievement7);
@@ -88,19 +86,43 @@ public class AchievementsFragment extends Fragment {
     }
 
 
-    private void manageVictories(int textViewId,int imageViewId){
+    private void manageVictories(int textViewId,int imageViewId, int hero){
 
+        boolean flag=false;
         TextView textRedeem = generalView.findViewById(textViewId);
         ImageView redeemImage = generalView.findViewById(imageViewId);
 
-        if (romanWins >= Constants.VICTORIES_COUNT || persisWins >= Constants.VICTORIES_COUNT ||
-                egyptWins >= Constants.VICTORIES_COUNT || spartanWins >= Constants.VICTORIES_COUNT){
+        switch (hero){
 
+            case ROME:
+                if(romanWins >= VICTORIES_COUNT){
+                    flag=true;
+                }
+                break;
+            case PERSIA:
+                if(persisWins >= VICTORIES_COUNT){
+                    flag=true;
+                }
+                break;
+            case SPARTA:
+                if(spartanWins >= VICTORIES_COUNT){
+                    flag=true;
+                }
+                break;
+            case EGYPT:
+                if(egyptWins >= VICTORIES_COUNT){
+                    flag=true;
+                }
+                break;
+        }
+
+        if(flag){
             generalView.setAlpha(1f);
             textRedeem.setAlpha(1f);
             redeemImage.setAlpha(1f);
             redeemImage.setImageAlpha(255);
         }
+
     }
 
 }

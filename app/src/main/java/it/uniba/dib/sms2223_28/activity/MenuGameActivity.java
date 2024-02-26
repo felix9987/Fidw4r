@@ -61,7 +61,7 @@ public class MenuGameActivity extends AppCompatActivity {
         menuFragment.setArguments(bundle);
 
         this.getSupportFragmentManager().beginTransaction()
-                .add(R.id.menuGameView, menuFragment)
+                .replace(R.id.menuGameView, menuFragment)
                 .commit();
     }
 
@@ -121,6 +121,7 @@ public class MenuGameActivity extends AppCompatActivity {
 
         this.getSupportFragmentManager().beginTransaction()
                 .replace(R.id.menuGameView, new GifFragment())
+                .setCustomAnimations(R.animator.slide_in_animator,R.animator.slide_out_animator)
                 .add(R.id.menuGameView, new AchievementsFragment())
                 .addToBackStack(null)
                 .commit();
@@ -130,8 +131,8 @@ public class MenuGameActivity extends AppCompatActivity {
 
         this.getSupportFragmentManager().beginTransaction()
                 .replace(R.id.menuGameView,new GifFragment())
-                .add(R.id.menuGameView, new RankingFragment()).
-                addToBackStack(null).
+                .add(R.id.menuGameView, new RankingFragment())
+                .addToBackStack(null).
                 commit();
     }
 

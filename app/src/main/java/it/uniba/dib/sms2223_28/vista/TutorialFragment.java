@@ -15,8 +15,9 @@ import it.uniba.dib.sms2223_28.R;
 
 public class TutorialFragment extends Fragment {
 
-    private static final Integer[] tutorialList = {R.drawable.tutorial_background, R.drawable.tutorial_1, R.drawable.tutorial_2,R.drawable.tutorial_3, R.drawable.tutorial_4, R.drawable.tutorial_5, R.drawable.tutorial_6,R.drawable.tutorial_7, R.drawable.tutorial_8, R.drawable.tutorial_9, R.drawable.tutorial_10};
-    private static final int[] stringList={0,R.string.tutorial_slide1, R.string.tutorial_slide2, R.string.tutorial_slide3, R.string.tutorial_slide4, R.string.tutorial_slide5, R.string.tutorial_slide6, R.string.tutorial_slide7, R.string.tutorial_slide8, R.string.tutorial_slide9, R.string.tutorial_slide10};
+    private final int[] tutorialList = {R.drawable.tutorial_background, R.drawable.tutorial_1, R.drawable.tutorial_2,R.drawable.tutorial_3, R.drawable.tutorial_4, R.drawable.tutorial_5, R.drawable.tutorial_6,R.drawable.tutorial_7, R.drawable.tutorial_8, R.drawable.tutorial_9, R.drawable.tutorial_10};
+    private final int[] stringList={0,R.string.tutorial_slide1, R.string.tutorial_slide2, R.string.tutorial_slide3, R.string.tutorial_slide4, R.string.tutorial_slide5, R.string.tutorial_slide6, R.string.tutorial_slide7, R.string.tutorial_slide8, R.string.tutorial_slide9, R.string.tutorial_slide10};
+    public static final String IND_KEY = "key of the index";
     private int i;
 
     @Override
@@ -38,11 +39,10 @@ public class TutorialFragment extends Fragment {
         int string;
 
         try {
-            i=getArguments().getInt("4");
+            i=getArguments().getInt(IND_KEY);
         } catch (NullPointerException e) {
             i=0;
         }
-
 
         if (i == 0) {
             view.findViewById(R.id.previous_tutorial_slide).setAlpha(0.44f);
@@ -50,49 +50,44 @@ public class TutorialFragment extends Fragment {
         } else {
 
             if (i>=tutorialList.length)
-                i= tutorialList.length-1;
+                i = tutorialList.length-1;
 
             drawable=tutorialList[i];
             string=stringList[i];
             view.findViewById(R.id.tutorial_view).setBackgroundResource(drawable);
             ((TextView) view.findViewById(R.id.tutorial_text_description)).setText(string);
 
-            view.findViewById(R.id.previous_tutorial_slide).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    TutorialFragment fragment = new TutorialFragment();
-                    Bundle bundle = new Bundle();
-                    bundle.putInt("4", --i);
-                    fragment.setArguments(bundle);
+            view.findViewById(R.id.previous_tutorial_slide).setOnClickListener(view12 -> {
+                TutorialFragment fragment = new TutorialFragment();
+                Bundle bundle = new Bundle();
+                bundle.putInt(IND_KEY, --i);
+                fragment.setArguments(bundle);
 
-                    getParentFragmentManager().beginTransaction()
-                            .setCustomAnimations(R.animator.slide_out_animator,0)
-                            .replace(R.id.tutorialTotalView, fragment)
-                            .commit();
-                }
+                getParentFragmentManager().beginTransaction()
+                        .setCustomAnimations(R.animator.slide_out_animator,0)
+                        .replace(R.id.tutorialTotalView, fragment)
+                        .commit();
             });
         }
 
-        if (i == tutorialList.length - 1) {
+        if (i == tutorialList.length-1) {
             view.findViewById(R.id.next_tutorial_slide).setAlpha(0.44f);
         } else {
 
-            view.findViewById(R.id.next_tutorial_slide).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    ((TextView)requireView().findViewById(R.id.tutorial_text_1)).setText(null);
-                    TutorialFragment fragment = new TutorialFragment();
-                    Bundle bundle = new Bundle();
-                    bundle.putInt("4", ++i);
-                    fragment.setArguments(bundle);
+            view.findViewById(R.id.next_tutorial_slide).setOnClickListener(view1 -> {
+                ((TextView)requireView().findViewById(R.id.tutorial_text_1)).setText(null);
+                TutorialFragment fragment = new TutorialFragment();
+                Bundle bundle = new Bundle();
+
+                bundle.putInt(IND_KEY, ++i);
+                fragment.setArguments(bundle);
+                view.findViewById(R.id.next_tutorial_slide).setVisibility(View.INVISIBLE);
 
 
-
-                    getParentFragmentManager().beginTransaction()
-                            .setCustomAnimations(R.animator.slide_in_animator,0)
-                            .replace(R.id.tutorialTotalView, fragment)
-                            .commit();
-                }
+                getParentFragmentManager().beginTransaction()
+                        .setCustomAnimations(R.animator.slide_in_animator,0)
+                        .replace(R.id.tutorialTotalView, fragment)
+                        .commit();
             });
         }
 

@@ -66,6 +66,7 @@ public class BackFragment extends Fragment {
                 if(maxTrophies < Constants.TROPHIES_TO_UNLOCK_EGYPT_BACK){
                     imageButton.setClickable(false);
                     view.findViewById(R.id.littleStarSpecialBack).setAlpha(0.44f);
+                    view.findViewById(R.id.back_unlock).setAlpha(0.44f);
 
                 } else
                     setOnClick(imageButton,backId,hero);
@@ -81,6 +82,7 @@ public class BackFragment extends Fragment {
                 if(maxTrophies < Constants.TROPHIES_TO_UNLOCK_SPARTA_BACK){
                     imageButton.setClickable(false);
                     view.findViewById(R.id.littleStarSpecialBack).setAlpha(0.44f);
+                    view.findViewById(R.id.back_unlock).setAlpha(0.44f);
 
                 } else
                     setOnClick(imageButton,backId,hero);
@@ -97,6 +99,7 @@ public class BackFragment extends Fragment {
                 if(maxTrophies < Constants.TROPHIES_TO_UNLOCK_PERSIA_BACK){
                     imageButton.setClickable(false);
                     view.findViewById(R.id.littleStarSpecialBack).setAlpha(0.44f);
+                    view.findViewById(R.id.back_unlock).setAlpha(0.44f);
 
                 } else
                     setOnClick(imageButton,backId,hero);
@@ -112,6 +115,7 @@ public class BackFragment extends Fragment {
                 if(maxTrophies < Constants.TROPHIES_TO_UNLOCK_ROMAN_BACK){
                     imageButton.setClickable(false);
                     view.findViewById(R.id.littleStarSpecialBack).setAlpha(0.44f);
+                    view.findViewById(R.id.back_unlock).setAlpha(0.44f);
 
                 } else
                     setOnClick(imageButton,backId,hero);
@@ -180,6 +184,10 @@ public class BackFragment extends Fragment {
 
 
         });
+    }
+
+    public void setInvisible(){
+        this.requireView().setVisibility(View.INVISIBLE);
     }
 
 }

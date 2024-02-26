@@ -1,6 +1,7 @@
 package it.uniba.dib.sms2223_28.activity;
 
 
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -30,6 +31,7 @@ import java.util.Objects;
 import it.uniba.dib.sms2223_28.BackgroundMusic;
 import it.uniba.dib.sms2223_28.R;
 import it.uniba.dib.sms2223_28.modello.User;
+import it.uniba.dib.sms2223_28.vista.GifFragment;
 import it.uniba.dib.sms2223_28.vista.TutorialFragment;
 import it.uniba.dib.sms2223_28.vista.WaitFragment;
 import it.uniba.dib.sms2223_28.modello.Constants;
@@ -37,8 +39,11 @@ import it.uniba.dib.sms2223_28.vista.ViewHeroChoice;
 import it.uniba.dib.sms2223_28.vista.FragmentGameResearch;
 
 public class PlayActivity extends AppCompatActivity {
-    private static final int MILLIS_TO_START_MATCH = 120000;
+    private static final int MILLIS_TO_START_MATCH = 60000;
     public static final int DELAY_MILLIS = 1000;
+    private static final String KEY_ROMANS_WIN = "romans' win";
+    private static final String KEY_PERSIS_WIN = "persis' win";
+    private static final String KEY_SPARTANS_WIN = "spartans' win";
     private Integer egyptValue;
     private Integer romanValue;
     private Integer spartanValue;
@@ -58,6 +63,7 @@ public class PlayActivity extends AppCompatActivity {
     private boolean otherActStartedFlag;
     private boolean networkFlag;
     private CountDownTimer timer;
+    private int romanWins, persisWins,spartanWins;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,9 +73,15 @@ public class PlayActivity extends AppCompatActivity {
 
         try{
             key = this.getIntent().getExtras().getString(Constants.USER_KEY);
-
         } catch (NullPointerException e){
             e.printStackTrace();
+        }
+
+        if (savedInstanceState!=null) {
+
+            romanWins= savedInstanceState.getInt(KEY_ROMANS_WIN);
+            persisWins= savedInstanceState.getInt(KEY_PERSIS_WIN);
+            spartanWins= savedInstanceState.getInt(KEY_SPARTANS_WIN);
         }
 
         this.fragmentResearch=null;
@@ -123,23 +135,12 @@ public class PlayActivity extends AppCompatActivity {
                     spartanValue= snapshot.child("cardsBackSpartans").getValue(Integer.class);
                     persisValue= snapshot.child("cardsBackPersis").getValue(Integer.class);
 
-                    int romanWins, persisWins,spartanWins;
 
                     romanWins = snapshot.child("romanWins").getValue(Integer.class);
-                    persisWins = snapshot.child("spartanWins").getValue(Integer.class);
+                    persisWins = snapshot.child("persisWins").getValue(Integer.class);
                     spartanWins = snapshot.child("spartanWins").getValue(Integer.class);
 
-                    if(romanWins < Constants.VICTORIES_COUNT ){
-                        heroChoiceFragment.setOnClick(false,Constants.PERSIA);
-                    }
-
-                    if(persisWins < Constants.VICTORIES_COUNT){
-                        heroChoiceFragment.setOnClick(false,Constants.SPARTA);
-                    }
-
-                    if(spartanWins < Constants.VICTORIES_COUNT){
-                        heroChoiceFragment.setOnClick(false,Constants.EGYPT);
-                    }
+                    manageHeroes();
 
                 }
 
@@ -151,6 +152,20 @@ public class PlayActivity extends AppCompatActivity {
             });
         }
 
+    }
+
+    private void manageHeroes() {
+        if(romanWins < Constants.VICTORIES_COUNT ){
+            heroChoiceFragment.setOnClick(false,Constants.PERSIA);
+        }
+
+        if(persisWins < Constants.VICTORIES_COUNT){
+            heroChoiceFragment.setOnClick(false,Constants.SPARTA);
+        }
+
+        if(spartanWins < Constants.VICTORIES_COUNT){
+            heroChoiceFragment.setOnClick(false,Constants.EGYPT);
+        }
     }
 
     @Override
@@ -457,11 +472,13 @@ public class PlayActivity extends AppCompatActivity {
 
     public void tutorial(View view){
         findViewById(R.id.gameResearch).setVisibility(View.INVISIBLE);
+        this.heroChoiceFragment.setOnClick(false);
 
         getSupportFragmentManager().beginTransaction()
                 .addToBackStack(null)
+                .replace(R.id.playActivityView, new GifFragment())
                 .setCustomAnimations(R.animator.slide_in_animator,R.animator.slide_out_animator)
-                .replace(R.id.deckChoice, new TutorialFragment())
+                .add(R.id.playActivityView, new TutorialFragment())
                 .commit();
     }
 
@@ -483,19 +500,22 @@ public class PlayActivity extends AppCompatActivity {
         if(this.frameGameResearch.getVisibility() == View.VISIBLE ){
             this.frameGameResearch.setVisibility(View.INVISIBLE);
             this.heroChoiceFragment.setOnClick(true);
-        }
-        else if (this.getSupportFragmentManager().findFragmentById(R.id.deckChoice) instanceof WaitFragment) {
+
+        } else if (this.getSupportFragmentManager().findFragmentById(R.id.deckChoice) instanceof WaitFragment) {
             try {
                 databaseReference.child("Connections").child(connectionKey).child(key).removeValue();
-            }catch (NullPointerException e) {
+            } catch (NullPointerException e) {
 
             }
+            if (timer != null) timer.cancel();
+
             super.onBackPressed();
+            manageHeroes();
 
         } else {
             BackgroundMusic.setMusicFlag(false);
-            otherActStartedFlag =true;
-            this.finish();
+            otherActStartedFlag = true;
+            finish();
         }
 
     }

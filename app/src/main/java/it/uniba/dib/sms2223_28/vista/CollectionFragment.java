@@ -22,6 +22,7 @@ public class CollectionFragment extends Fragment {
     private GenericDeck deck;
     private boolean flagDeck;
     private String key;
+    BackFragment backFragment;
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -62,7 +63,6 @@ public class CollectionFragment extends Fragment {
         deckFragment.setArguments(bundle);
 
         FragmentTransaction transaction= getParentFragmentManager().beginTransaction();
-        transaction.addToBackStack(null);
         transaction.setCustomAnimations(R.animator.slide_in_animator, R.animator.slide_out_animator);
         transaction.replace(R.id.layout_collection, deckFragment);
         transaction.commit();
@@ -98,6 +98,8 @@ public class CollectionFragment extends Fragment {
 
     public void collectionPressed(View view){
         if (!flagDeck) {
+            if (backFragment!=null)
+                backFragment.setInvisible();
             setBackAlpha(0.44f);
             setCollectionAlpha(1);
             this.deckFragmentCall();
@@ -107,8 +109,9 @@ public class CollectionFragment extends Fragment {
 
     public void backPressed(View view){
         if(flagDeck) {
-            BackFragment backFragment = new BackFragment();
+            backFragment = new BackFragment();
             Bundle bundle = new Bundle();
+
             bundle.putSerializable(Constants.HERO_KEY, this.hero);
             bundle.putString(Constants.USER_KEY, this.key);
             backFragment.setArguments(bundle);
@@ -117,6 +120,8 @@ public class CollectionFragment extends Fragment {
                     .setCustomAnimations(R.animator.slide_in_animator, 0)
                     .replace(R.id.layout_collection, backFragment)
                     .commit();
+
+
 
             flagDeck = false;
             setBackAlpha(1);

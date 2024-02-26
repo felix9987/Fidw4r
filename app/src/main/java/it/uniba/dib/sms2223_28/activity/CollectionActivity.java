@@ -37,7 +37,6 @@ public class CollectionActivity extends AppCompatActivity implements View.OnClic
     private boolean otherActStartedFlag;
     private CollectionSingleCardFragment collectionSingleCardFragment;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -130,16 +129,16 @@ public class CollectionActivity extends AppCompatActivity implements View.OnClic
 
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
         fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.setCustomAnimations(R.animator.slide_in_animator,R.animator.slide_out_animator);
         fragmentTransaction.replace(R.id.collectionFrame, new GifFragment());
+        fragmentTransaction.setCustomAnimations(R.animator.slide_in_animator,R.animator.slide_out_animator);
         fragmentTransaction.add(R.id.collectionFrame, collectionFragment);
         fragmentTransaction.commit();
 
         try {
-
             viewHeroChoice.setVisibility(View.INVISIBLE);
             if (collectionSingleCardFragment!=null)
                 collectionSingleCardFragment.setVisibility(View.INVISIBLE);
+
         } catch (Exception e) {}
 
     }
@@ -217,8 +216,8 @@ public class CollectionActivity extends AppCompatActivity implements View.OnClic
             BackgroundMusic.setMusicFlag(false);
             this.finish();
 
-        } else if (this.getSupportFragmentManager().findFragmentById(R.id.collectionFrame) instanceof CollectionFragment)
-            heroChoiceFragmentCall();
+        } //else if (this.getSupportFragmentManager().findFragmentById(R.id.collectionFrame) instanceof CollectionFragment)
+          //  heroChoiceFragmentCall();
 
         else
             super.onBackPressed();
