@@ -209,6 +209,7 @@ public class BattleFragment extends Fragment {
 
         setCards(listCardsOpponent, cardsOpponent);
         setCards(listCardsPlayer, cardsPlayer);
+
     }
 
     private void setCards(List<Card> listCards, HandHandler cards) {
@@ -798,5 +799,12 @@ public class BattleFragment extends Fragment {
 
     public void setBattleButtonClickable(boolean flag) {
         requireView().findViewById(R.id.btnEndBattle).setClickable(flag);
+
+        if (flag)
+            requireView().findViewById(R.id.btnEndBattle).setAlpha(1);
+        else
+            requireView().findViewById(R.id.btnEndBattle).setAlpha(0.44f);
+
     }
+
 }

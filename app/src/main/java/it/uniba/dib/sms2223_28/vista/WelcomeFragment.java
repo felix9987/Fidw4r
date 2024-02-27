@@ -63,12 +63,7 @@ public class WelcomeFragment extends Fragment {
                     .add(R.id.activityMainView, settingsFragment)
                     .addToBackStack(null)
                     .commit();
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    settingsFragment.setEscButton(view1 -> getActivity().finish());
-                }
-            },1000);
+            new Handler().postDelayed(() -> settingsFragment.setEscButton(view1 -> getActivity().finish()),100);
         });
 
     }

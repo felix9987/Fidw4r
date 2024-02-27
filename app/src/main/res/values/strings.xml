@@ -303,7 +303,7 @@
     <string name="turn">TERMINA TURNO</string>
 
     <string name="tutorial_text_1">Benvenuto nel tutorial di Fidw4r!</string>
-    <string name="turno_successivo">turno successivo</string>
+    <string name="turno_successivo">turno\nsuccessivo</string>
     <string name="vittoria">VITTORIA!</string>
 
     <string name="tutorial_slide1">Tieni premuto per vedere le informazioni relative alla partita</string>

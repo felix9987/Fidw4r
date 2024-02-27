@@ -309,7 +309,7 @@
     <string name="turn">PASS ROUND</string>
 
     <string name="tutorial_text_1">Welcome to Fidw4r\'s tutorial!</string>
-    <string name="turno_successivo">next turn</string>
+    <string name="turno_successivo">next\nturn</string>
     <string name="vittoria">TOU WIN!</string>
 
     <string name="tutorial_slide1">Press and hold to see information about the match</string>
